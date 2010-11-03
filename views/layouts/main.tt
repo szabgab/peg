@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <title><% title %></title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <meta http-equiv="Content-Language" content="en" />
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+  <meta name="keywords" content="Perl, training, consulting, business, community, promotion, advocacy" />
+  <meta name="description" content="<% description %>" />
+</head>
+<body>
+
+  
+<!-- 
+    Credit goes to the Ruby on Rails team for this page 
+    has been heavily based on the default Rails page that is 
+    built with a scaffolded application.
+
+    Thanks a lot to them for their work.
+
+    See Ruby on Rails if you want a kickass framework in Ruby:
+    http://www.rubyonrails.org/
+-->
+
+<div id="page">
+  <div id="sidebar">
+    <ul id="sidebar-items">
+      <li>
+        <h3><% subtitle %></h3>
+        <ul class="links">
+          <li><a href="/what">What</a></li>
+          <li><a href="/who">Who</a></li>
+          <li><a href="/events">Events</a></li>
+<!--          <li><a href="/earlier_events">Earlier Events</a></li> -->
+          <li><a href="/news">News</a></li>
+          <li><a href="/members">Members</a></li>
+          <li><a href="/membership">Membership</a></li>
+          <li><a href="/benefits">Benefits</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+<div id="content">
+  <div id="header">
+    <h1><a id="toplink" href="/">Perl Ecosystem Group</a></h1>
+    <h2>bridging the gap between business<br>and the open source Perl community</h2>
+  </div>
+
+<% content %>
+
+</div> <!-- content -->
+
+</div> <!-- page -->
+
+<div id="footer">
+Powered by <a href="http://perldancer.org/">Dancer</a>
+</div>
+</body>
+</html>
