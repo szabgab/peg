@@ -6,12 +6,15 @@
 
 <div id="schedule">
 <ul>
+<% FOR n IN news %>
   <li>
     <ul>
-      <li>2010.10.20</li>
-      <li>The web site of the Perl Ecosystem Group was opened to public. We started to contact companies to sponsor our activities.</li>
+     <li><% n.date %></li>
+     <li><% n.text %></li>
     </ul>
-  </li>
+   </li>
+<% END %>
+
 </ul>
 </div>
 

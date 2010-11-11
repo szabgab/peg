@@ -69,13 +69,22 @@ get '/benefits' => sub {
     };
 };
 
+my @news = (
+	{
+		date => '2010.10.20',
+		text => 'The web site of the Perl Ecosystem Group was opened to public. We started to contact companies to sponsor our activities.',
+        },
+);
+
 get '/news' => sub {
     template 'news', { 
       title        => 'News',
       subtitle     => 'News',
       description  => 'News about the Perl Ecosystem Group',
+      news         => \@news,
     };
 };
+
 
 get '/earlier_events' => sub {
     template 'earlier_events', { 
