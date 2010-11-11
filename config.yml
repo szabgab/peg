@@ -1,4 +1,5 @@
 layout: "main"
 logger: "file"
 appname: "PEG"
+template: template_toolkit
 
