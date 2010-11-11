@@ -71,12 +71,24 @@ get '/benefits' => sub {
 
 my @news = (
 	{
+		date => '2010.11.10',
+		text => '<a href="http://www.oqapi.com/en">Oqapi</a> agrees to become member of the Per Ecosystem Group',
+	},
+	{
+		date => '2010.11.09',
+		text => 'PEG announces it will support the Perl teams participating on the <a href="http://www.plat-forms.org/">Plat_Forms contest</a>. See the <a href="http://szabgab.com/blog/2010/11/sponsoring-plat-forms-contest-teams.html">blog</a> about it.',
+	},
+	{
 		date => '2010.11.06',
 		text => '<a href="http://www.dijkmat.nl/">Dijkmat BV</a> becomes the first Bronze <a href="/members">member</a> of the Perl Ecosystem Group.',
 	},
 	{
 		date => '2010.11.06',
 		text => 'Gabor Szabo from the Perl Ecosystem Group together with several members of the <a href="http://www.sppn.nl/">Dutch Perl Mongers</a> participate at <a href="http://www.t-dose.org/">T-Dose</a></h3> in Eindhoven, The Netherlands with a Perl booth.',
+	},
+	{
+		date => '2010.11.05',
+		text => 'Blog entries announcing the establishment of the Perl Ecosystem Group in <a href="http://szabgab.com/blog/2010/11/perl-ecosystem-group.html">English</a> and in <a href="http://reneeb-perlblog.blogspot.com/2010/11/perl-ecosystem-group.html">German</a>.',
 	},
 	{
 		date => '2010.11.02',
