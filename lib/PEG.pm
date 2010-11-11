@@ -72,7 +72,7 @@ get '/benefits' => sub {
 my @news = (
 	{
 		date => '2010.11.10',
-		text => '<a href="http://www.oqapi.com/en">Oqapi</a> agrees to become member of the Per Ecosystem Group',
+		text => '<a href="http://www.oqapi.com/en">Oqapi</a> agrees to become member of the Perl Ecosystem Group',
 		title => 'Oqapi joins the Perl Ecosystem Group',
 		author => 'Gabor Szabo',
 	},
