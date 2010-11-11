@@ -16,6 +16,8 @@ WriteMakefile(
         'YAML'       => 0,
         'Dancer'     => 1.1901,
 	'Template'   => 0,
+    	'XML::RSS'   => 0,
+    	'Encode'     => 0,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'PEG-*' },
