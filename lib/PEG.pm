@@ -14,9 +14,17 @@ get '/(index.html)?' => sub {
 
 get '/what' => sub {
     template 'what', { 
-        title       => 'What does The Perl Ecosystem Group do?',
+        title       => 'What does the Perl Ecosystem Group do?',
         subtitle    => 'What?',
         description => 'Promoting Perl outside the Perl echo-chamber, at non-Perl events, via journals etc.',
+    };
+};
+
+get '/why' => sub {
+    template 'why', { 
+        title       => 'Why is it important to be a member of the Perl Ecosystem Group?',
+        subtitle    => 'Why?',
+        description => '',
     };
 };
 
