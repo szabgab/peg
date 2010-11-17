@@ -1,0 +1,64 @@
+
+Announcement: The establishment of the Perl Ecosystem Group
+
+
+FRANKFURT, GERMANY, (5 November 2010)
+
+The Perl Ecosystem Group announces its establishment to bridge the gap
+between companies using Perl and the Open Source Perl Community.
+
+
+
+In the past 20 years the Perl community has developed and 
+maintained a wonderful set of technologies starting from the 
+language itself via CPAN the much envied repository of more than 
+20,000 libraries to various open source products.
+
+Perl is being used by almost every Fortune 500 company. 
+For many it is a critical technology in their IT infrastructure.
+
+The Perl Ecosystem Group will focus on bringing together the
+needs and the powers of these groups that are both interested in the
+well-being of the Perl Ecosystem.
+
+Companies want to make sure there is ample supply of 
+excellent Perl developer to make it easier for them to hire.
+
+Companies need certain Perl libraries to be developed
+or enhanced in areas that are not always the focus of the open
+source developers. The Perl Ecosystem Group will provide
+ways to channel funds directly to the development of 
+these libraries.
+
+While most of the code is developed on a volunteer basis
+there are certain areas where open source developers need financing. 
+For example organizing face-to-face meetings between core developers
+of various projects (also called hackathons or code-sprints) need financing.
+
+Promoting Perl and the various Perl based open source projects is also
+a common interest. Ensuring the attendance of of well-known Perl speakers 
+at high-profile conferences will increase the mind-share of the Perl
+programming language.
+
+Our activities will be financed by the annual fees of member
+companies and by one-off sponsorships.
+
+The Perl Ecosystem Group starts its world wide activity based 
+in Modiin, Israel and in Frankfurt, Germany.
+
+Further details about the Perl Ecosystem Group can be found on our
+web site: http://perl-ecosystem.org/
+
+
+CONTACT
+---------
+Contact information at the Perl Ecosystem Group: 
+
+For further information, please contact 
+Gabor Szabo director by e-mail gabor@perl-ecosystem.org
+or by phone: +972-54-4624648 in English.
+
+The German speaking contact is Renee Baecker director 
+by e-mail at renee@perl-ecosystem.org or by phone:
++49-180-300-221-048-94
+
