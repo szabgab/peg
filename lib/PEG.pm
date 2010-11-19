@@ -77,6 +77,22 @@ get '/benefits' => sub {
     };
 };
 
+get '/events/:name' => sub {
+    template 'events/' . params->{name} , {
+        title       => 'Testevent',
+        subtitle    => 'Subtitle',
+        description => 'Description of Testevent',
+    }
+};
+
+get '/earlier_events/:name' => sub {
+    template 'earlier_events/' . params->{name}, {
+        title       => 'Testevent',
+        subtitle    => 'Subtitle',
+        description => 'Description of Testevent',
+    }
+};
+
 my @news = (
 	{
 		date => '2010.11.10',
