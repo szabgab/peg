@@ -36,6 +36,14 @@ get '/who' => sub {
     };
 };
 
+get '/sponsors' => sub {
+    template 'sponsors', { 
+      title       => 'Sponsors',
+      subtitle    => 'Sponsors',
+      description => 'Sponsors of the Perl Ecosystem Group.',
+    };
+};
+
 get '/members' => sub {
     template 'members', { 
       title       => 'Members',
