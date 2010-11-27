@@ -1,0 +1,18 @@
+
+<div id="getting-started">
+<p>
+A couple of things about Perl that many people don't know yet
+</p>
+<ul>
+<li>Moose: the modern framework for object oriented programming in Perl</li>
+<li>Catalyst</li>
+<li>Dancer</li>
+<li>DBIx::Class</li>
+<li>Modern::Perl</li>
+<li>CPAN (many people outside the Perl community don't know much about CPAN or avoid using it)</li>
+<li>Perl 5.10, while it has been out for several years now it is only now that it is </li>
+<li>Perl 5.12</li>
+<li>jobs.perl.org: A place for job offers</li>
+</ul>
+
+</div>
