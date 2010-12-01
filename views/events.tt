@@ -12,17 +12,9 @@ See information about the <a href="/earlier_events">earlier events</a>.
 
 <div id="schedule">
 <ul>
-<li><ul><li>2011.01.18-19</li><li>Plat_forms contest, Nurnberg, Germany</li></ul></li>
-<li><ul><li>2011.02.5-6</li><li>FOSDEM, Brussels, Belgium</li></ul></li>
-<li><ul><li>2011.02.12</li><li>Linux Informationstag, Oldenburg, Germany</li></ul></li>
-<li><ul><li>2011.02.25-27</li><li>SCALE - Annual Southern California Linux Expo, Los Angeles, USA, California</li></ul></li>
-<li><ul><li>2011.03.1-5</li><li>CeBIT 2011, Hannover, Germany</li></ul></li>
-<li><ul><li>2011.03.19-20</li><li>Chemnitzer Linux-Tage, Chemnitz, Germany</li></ul></li>
-<li><ul><li>2011.03.22-24</li><li>UKUUG, Leeds, UK</li></ul></li>
-<li><ul><li>2011.03.23-25</li><li>POSCON, Columbia, South Carolina, USA</li></ul></li>
-<li><ul><li>2011.04.9</li><li>Grazer LinuxTag, Graz, Austria</li></ul></li>
-<li><ul><li>2011.04.30-05.1</li><li>Linuxfest Northwest, Bellingham, Washington, USA</li></ul></li>
-<li><ul><li>2011.05.11-14</li><li>LinuxTag, Berlin, Germany</li></ul></li>
+<% FOR e IN events %>
+<li><ul><li><% e.date %></li><li><% e.title %>, <% e.address %></li></ul></li>
+<% END %>
 </ul>
 </div>
 

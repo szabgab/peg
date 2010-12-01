@@ -53,10 +53,12 @@ get '/members' => sub {
 };
 
 get '/events' => sub {
+    my $events = YAML::LoadFile(path config->{appdir}, 'events.yml');
     template 'events', { 
       title        => 'List of upcoming events',
       subtitle     => 'Events',
       description  => 'Events where the The Perl Ecosystem Group will organize Perl related talks and will setup a Perl themed booth.',
+      events       => $events,
     };
 };
 
