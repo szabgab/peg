@@ -53,7 +53,7 @@ get '/members' => sub {
 };
 
 get '/events' => sub {
-    my $events = YAML::LoadFile(path config->{appdir}, 'events.yml');
+    my $events = YAML::LoadFile(path config->{appdir}, 'data', 'events.yml');
     template 'events', { 
       title        => 'List of upcoming events',
       subtitle     => 'Events',
