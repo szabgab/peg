@@ -1,0 +1,4 @@
+Sources of external files
+
+http://static1.tripwolf.com/images/tripwolf/logos/StartpageLogo.png public/img/tripwolf.png
+
