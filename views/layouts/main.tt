@@ -12,17 +12,6 @@
 </head>
 <body>
 
-<!-- 
-    Credit goes to the Ruby on Rails team for this page 
-    has been heavily based on the default Rails page that is 
-    built with a scaffolded application.
-
-    Thanks a lot to them for their work.
-
-    See Ruby on Rails if you want a kickass framework in Ruby:
-    http://www.rubyonrails.org/
--->
-
 <div id="page">
   <div id="sidebar">
     <ul id="sidebar-items">
