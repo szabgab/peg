@@ -8,10 +8,10 @@
   <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
   <meta name="keywords" content="Perl, training, consulting, business, community, promotion, advocacy" />
   <meta name="description" content="<% description %>" />
+  <link href="/rss" rel="alternate" type="application/rss+xml" title ="Perl Ecosystem Group" />
 </head>
 <body>
 
-  
 <!-- 
     Credit goes to the Ruby on Rails team for this page 
     has been heavily based on the default Rails page that is 
