@@ -1,0 +1,35 @@
+---
+  - date: 2010.02.6-7
+    title: FOSDEM
+    address: Brussels, Belgium
+  - date: 2010.03.2-6
+    title: CeBIT
+    address: Hannover, Germany
+  - date: 2010.06.7-9
+    title: German Perl Workshop
+    address: Schorndorf (near Stuttgart), Germany
+  - date: 2010.06.9-12
+    title: LinuxTag
+    address: Berlin, Germany
+  - date: 2010.06.21-23
+    title: YAPC::NA
+    address: Columbus, Ohio, USA
+  - date: 2010.06.26
+    title: Belgian Perl Workshop
+    address: Brussels, Belgium
+  - date: 2010.08.4-6
+    title: YAPC::EU
+    address: Pisa, Italy
+  - date: 2010.08.21-22
+    title: FrOSCon
+    address: St Augustin, Germany
+  - date: 2010.09.17-18
+    title: FrOSCamp
+    address: Zurich, Switzerland
+  - date: 2010.10.20
+    title: The establishment of the Perl Ecosystem Group
+    address:
+  - date: 2010.11.6-7
+    title: T-Does
+    address: Eindhoven, The Netherlands
+

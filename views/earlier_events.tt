@@ -7,18 +7,9 @@ List of events where we have already participated even before the formation of t
 
 <div id="schedule">
 <ul>
-<li><ul><li>2010.02.6-7</li><li>FOSDEM, Brussels, Belgium</li></ul></li>
-<li><ul><li>2010.03.2-6</li><li>CeBIT, Hannover, Germany</li></ul></li>
-<li><ul><li>2010.06.7-9</li><li>German Perl Workshop, Schorndorf (near Stuttgart), Germany</li></ul></li>
-<li><ul><li>2010.06.9-12</li><li>LinuxTag, Berlin, Germany</li></ul></li>
-<li><ul><li>2010.06.21-23</li><li>YAPC::NA, Columbus, Ohio, USA</li></ul></li>
-<li><ul><li>2010.06.26</li><li>Belgian Perl Workshop, Brussels, Belgium</li></ul></li>
-<li><ul><li>2010.08.4-6</li><li>YAPC::EU, Pisa, Italy</li></ul></li>
-<li><ul><li>2010.08.21-22</li><li>FrOSCon, St Augustin, Germany</li></ul></li>
-<li><ul><li>2010.09.17-18</li><li>FrOSCamp, Zurich, Switzerland</li></ul></li>
-<!-- <li><ul><li>2010.11.6</li><li>7. Brandenburger Linux-Infotage, Potsdam, Germany</li></ul></li> -->
-<li>The establishment of the Perl Ecosystem Group</li>
-<li><ul><li>2010.11.6-7</li><li>T-Does, Eindhoven, The Netherlands</li></ul></li>
+<% FOR e IN events %>
+<li><ul><li><% e.date %></li><li><% e.title %>, <% e.address %></li></ul></li>
+<% END %>
 </ul>
 </div>
 

@@ -148,10 +148,12 @@ get '/rss' => sub {
 
 
 get '/earlier_events' => sub {
+    my $events = YAML::LoadFile(path config->{appdir}, 'data', 'earlier_events.yml');
     template 'earlier_events', { 
       title        => 'Earlier events',
       subtitle     => 'Earlier events',
       description  => 'A list of events we participated at. Even before the Perl Ecosystem Group was setup',
+      events       => $events,
     };
 };
 
