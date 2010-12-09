@@ -87,6 +87,14 @@ get '/benefits' => sub {
     };
 };
 
+get '/about' => sub {
+    template 'about', { 
+      title        => 'About',
+      subtitle     => 'About',
+      description  => 'About the Perl Ecosystem Group and its technical background',
+    };
+};
+
 
 get '/news' => sub {
     my $news = _read_news();

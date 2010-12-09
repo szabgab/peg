@@ -1,0 +1,16 @@
+
+<div id="getting-started">
+
+<h2>Human</h2>
+<p>
+See <a href="/what">what</a> is the Perl Ecosystem Group about, 
+<a href="/who">who</a> is running it and <a href="/why">why</a> we do it?
+</p>
+
+<h2>Technical</h2>
+<p>
+The web site of the Perl Ecosystem Group is built using <a href="http://perldancer.org/">Perl Dancer</a> framework.
+It source code can be found on <a href="https://github.com/szabgab/peg">Github</a>.
+</p>
+
+</div>
