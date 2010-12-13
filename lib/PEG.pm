@@ -136,7 +136,7 @@ get '/rss' => sub {
     my $news = _read_news();
     foreach my $n (@$news) {
         my $text = $n->{text};
-	$text =~ s{"/}{"$url/}g;
+        $text =~ s{"/}{"$url/}g;
         $rss->add_item(
             title => decode('utf-8', $n->{title}),
             link  => $url . ($n->{permalink} || '/news'), 
