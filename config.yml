@@ -1,5 +1,5 @@
-layout: "main"
-appname: "PEG"
+layout:   "main"
+appname:  "PEG"
 template: template_toolkit
-charset: "UTF-8"
+charset:  "UTF-8"
 
