@@ -14,7 +14,7 @@ WriteMakefile(
     PREREQ_PM => {
         'Test::More' => 0,
         'YAML'       => 0,
-        'Dancer'     => 1.1901,
+        'Dancer'     => 1.2003,
 	'Template'   => 0,
     	'XML::RSS'   => 0,
     	'Encode'     => 0,
