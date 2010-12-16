@@ -3,6 +3,10 @@ use Dancer ':syntax';
 
 our $VERSION = '0.1';
 
+sub _read_news {
+    YAML::LoadFile(path config->{appdir}, 'data', 'news.yml');
+}
+
 my $upcoming_events = YAML::LoadFile(path config->{appdir}, 'data', 'events.yml');
 my $earlier_events  = YAML::LoadFile(path config->{appdir}, 'data', 'earlier_events.yml');
 my $news            = _read_news();
@@ -143,10 +147,6 @@ get '/news' => sub {
 get '/earlier_events' => sub {
     template 'earlier_events' => $content{'earlier_events'};
 };
-
-sub _read_news {
-    YAML::LoadFile(path config->{appdir}, 'data', 'news.yml');
-}
 
 get '/rss' => sub {
 
