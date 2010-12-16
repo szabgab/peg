@@ -1,5 +1,6 @@
 package PEG;
 use Dancer ':syntax';
+use Encode qw(decode);
 
 our $VERSION = '0.1';
 
@@ -118,7 +119,6 @@ get qr{^ / (\w+) $ }x => sub {
 
 get '/rss' => sub {
     require XML::RSS;
-    use Encode qw(decode);
 
     my $rss = XML::RSS->new( version => '1.0' );
     my $year = 1900 + (localtime)[5];
