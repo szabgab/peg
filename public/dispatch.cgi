@@ -1,5 +1,13 @@
 #!/usr/bin/env perl
-use Plack::Runner;
 use Dancer ':syntax';
-my $psgi = path(dirname(__FILE__), '..', 'PEG.pl');
+use FindBin '$RealBin';
+use Plack::Runner;
+
+# For some reason Apache SetEnv directives dont propagate
+# correctly to the dispatchers, so forcing PSGI and env here 
+# is safer.
+set apphandler => 'PSGI';
+set environment => 'production';
+
+my $psgi = path($RealBin, '..', 'bin', 'app.pl');
 Plack::Runner->run($psgi);
