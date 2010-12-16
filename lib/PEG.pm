@@ -95,7 +95,7 @@ my %content = (
     },
 );
 
-get '/(index.html)?' => sub {
+get qr{^ / (?: index \. html )? $}x => sub {
     template 'index' => $content{'index'};
 };
 
