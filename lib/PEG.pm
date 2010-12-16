@@ -3,107 +3,145 @@ use Dancer ':syntax';
 
 our $VERSION = '0.1';
 
+my $upcoming_events = YAML::LoadFile(path config->{appdir}, 'data', 'events.yml');
+my $earlier_events  = YAML::LoadFile(path config->{appdir}, 'data', 'earlier_events.yml');
+my $news            = _read_news();
 
-get '/(index.html)?' => sub {
-    template 'index', { 
+# this will be refactored out into the templates later
+my %content = (
+    index => {
         title       => 'Perl Ecosystem Group',
         subtitle    => 'Welcome',
         description => 'The Perl Ecosystem Group is bridging the gap between business using Perl and the open source Perl community',
-    };
-};
+    },
 
-get '/what' => sub {
-    template 'what', { 
+    what => {
         title       => 'What does the Perl Ecosystem Group do?',
         subtitle    => 'What?',
         description => 'Promoting Perl outside the Perl echo-chamber, at non-Perl events, via journals etc.',
-    };
-};
+    },
 
-get '/why' => sub {
-    template 'why', { 
+    why => {
         title       => 'Why is it important to be a member of the Perl Ecosystem Group?',
         subtitle    => 'Why?',
         description => '',
-    };
-};
+    },
 
-get '/who' => sub {
-    template 'who', { 
+    who => {
         title       => 'About us',
         subtitle    => 'Who?',
         description => 'The people organizing the Perl related talks and the Perl themed development rooms.',
-    };
+    },
+
+    sponsors => {
+        title       => 'Sponsors',
+        subtitle    => 'Sponsors',
+        description => 'Sponsors of the Perl Ecosystem Group.',
+    },
+
+    members => {
+        title       => 'Members',
+        subtitle    => 'Members',
+        description => 'Members of the Perl Ecosystem Group.',
+    },
+
+    events => {
+        title        => 'List of upcoming events',
+        subtitle     => 'Events',
+        description  => 'Events where the The Perl Ecosystem Group will organize Perl related talks and will setup a Perl themed booth.',
+        events       => $upcoming_events,
+    },
+
+    contact => {
+        title        => 'Contact Us',
+        subtitle     => 'Contact',
+        description  => 'The Perl Ecosystem Group is bridging the gap between business using Perl and the open source Perl community',
+    },
+
+    membership => {
+        title        => 'Membership',
+        subtitle     => 'Membership',
+        description  => 'Information about the membership levels of the Perl Ecosystem Group',
+    },
+
+    benefits => {
+        title        => 'Benefits',
+        subtitle     => 'Benefits',
+        description  => 'Information about the benefitst of being a member in the Perl Ecosystem Group',
+    },
+
+    about => {
+        title        => 'About',
+        subtitle     => 'About',
+        description  => 'About the Perl Ecosystem Group and its technical background',
+    },
+
+    news => {
+        title        => 'News',
+        subtitle     => 'News',
+        description  => 'News about the Perl Ecosystem Group',
+        news         => $news,
+    },
+
+    earlier_events => {
+        title        => 'Earlier events',
+        subtitle     => 'Earlier events',
+        description  => 'A list of events we participated at. Even before the Perl Ecosystem Group was setup',
+        events       => $earlier_events,
+    },
+);
+
+get '/(index.html)?' => sub {
+    template 'index' => $content{'index'};
+};
+
+get '/what' => sub {
+    template 'what' => $content{'what'};
+};
+
+get '/why' => sub {
+    template 'why' => $content{'why'};
+};
+
+get '/who' => sub {
+    template 'who' => $content{'who'};
 };
 
 get '/sponsors' => sub {
-    template 'sponsors', { 
-      title       => 'Sponsors',
-      subtitle    => 'Sponsors',
-      description => 'Sponsors of the Perl Ecosystem Group.',
-    };
+    template 'sponsors' => $content{'sponsors'};
 };
 
 get '/members' => sub {
-    template 'members', { 
-      title       => 'Members',
-      subtitle    => 'Members',
-      description => 'Members of the Perl Ecosystem Group.',
-    };
+    template 'members' => $content{'members'};
 };
 
 get '/events' => sub {
-    my $events = YAML::LoadFile(path config->{appdir}, 'data', 'events.yml');
-    template 'events', { 
-      title        => 'List of upcoming events',
-      subtitle     => 'Events',
-      description  => 'Events where the The Perl Ecosystem Group will organize Perl related talks and will setup a Perl themed booth.',
-      events       => $events,
-    };
+    template 'events' => $content{'events'};
 };
 
 get '/contact' => sub {
-    template 'contact', { 
-      title        => 'Contact Us',
-      subtitle     => 'Contact',
-      description  => 'The Perl Ecosystem Group is bridging the gap between business using Perl and the open source Perl community',
-    };
+    template 'contact' => $content{'contact'};
 };
 
-
 get '/membership' => sub {
-    template 'membership', { 
-      title        => 'Membership',
-      subtitle     => 'Membership',
-      description  => 'Information about the membership levels of the Perl Ecosystem Group',
-    };
+    template 'membership' => $content{'membership'};
 };
 
 get '/benefits' => sub {
-    template 'benefits', { 
-      title        => 'Benefits',
-      subtitle     => 'Benefits',
-      description  => 'Information about the benefitst of being a member in the Perl Ecosystem Group',
-    };
+    template 'benefits' => $content{'benefits'};
 };
 
 get '/about' => sub {
-    template 'about', { 
-      title        => 'About',
-      subtitle     => 'About',
-      description  => 'About the Perl Ecosystem Group and its technical background',
-    };
+    template 'about' => $content{'about'};
 };
 
 
 get '/news' => sub {
-    my $news = _read_news();
-    template 'news', { 
-      title        => 'News',
-      subtitle     => 'News',
-      description  => 'News about the Perl Ecosystem Group',
-      news         => $news,
-    };
+    template 'news' => $content{'news'};
+};
+
+get '/earlier_events' => sub {
+    template 'earlier_events' => $content{'earlier_events'};
 };
 
 sub _read_news {
@@ -152,17 +190,6 @@ get '/rss' => sub {
     }
   
     return $rss->as_string;
-};
-
-
-get '/earlier_events' => sub {
-    my $events = YAML::LoadFile(path config->{appdir}, 'data', 'earlier_events.yml');
-    template 'earlier_events', { 
-      title        => 'Earlier events',
-      subtitle     => 'Earlier events',
-      description  => 'A list of events we participated at. Even before the Perl Ecosystem Group was setup',
-      events       => $events,
-    };
 };
 
 true;
