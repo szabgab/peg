@@ -1,5 +1,5 @@
-layout: "main"
-logger: "file"
-appname: "PEG"
+layout:   "main"
+appname:  "PEG"
 template: template_toolkit
+charset:  "UTF-8"
 
