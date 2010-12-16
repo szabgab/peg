@@ -8,8 +8,12 @@ sub _read_news {
     YAML::LoadFile(path config->{appdir}, 'data', 'news.yml');
 }
 
-my $upcoming_events = YAML::LoadFile(path config->{appdir}, 'data', 'events.yml');
-my $earlier_events  = YAML::LoadFile(path config->{appdir}, 'data', 'earlier_events.yml');
+my $upcoming_events = YAML::LoadFile(
+    path( config->{appdir}, 'data', 'events.yml' )
+);
+my $earlier_events  = YAML::LoadFile(
+    path( config->{appdir}, 'data', 'earlier_events.yml' )
+);
 my $news            = _read_news();
 
 # this will be refactored out into the templates later
