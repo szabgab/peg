@@ -1,5 +1,6 @@
-log: "core"
-warnings: 1
+log:         "core"
+logger:      "console"
+warnings:    1
 show_errors: 1
 
 # auto_reload is a development feature
