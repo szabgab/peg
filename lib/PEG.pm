@@ -12,6 +12,7 @@ my $earlier_events  = YAML::LoadFile(path config->{appdir}, 'data', 'earlier_eve
 my $news            = _read_news();
 
 # this will be refactored out into the templates later
+# will use auto pages for this
 my %content = (
     index => {
         title       => 'Perl Ecosystem Group',
@@ -99,57 +100,23 @@ get qr{^ / (?: index \. html )? $}x => sub {
     template 'index' => $content{'index'};
 };
 
-get '/what' => sub {
-    template 'what' => $content{'what'};
-};
+my @pages = qw/
+    what why who sponsors members events contact
+    membership benefits about news earlier_events
+/;
 
-get '/why' => sub {
-    template 'why' => $content{'why'};
-};
+get qr{^ / (\w+) $ }x => sub {
+    # get page
+    my ($page) = splat;
 
-get '/who' => sub {
-    template 'who' => $content{'who'};
-};
+    # we have the page or we pass up on it
+    grep { $page eq $_ } @pages or pass;
 
-get '/sponsors' => sub {
-    template 'sponsors' => $content{'sponsors'};
-};
-
-get '/members' => sub {
-    template 'members' => $content{'members'};
-};
-
-get '/events' => sub {
-    template 'events' => $content{'events'};
-};
-
-get '/contact' => sub {
-    template 'contact' => $content{'contact'};
-};
-
-get '/membership' => sub {
-    template 'membership' => $content{'membership'};
-};
-
-get '/benefits' => sub {
-    template 'benefits' => $content{'benefits'};
-};
-
-get '/about' => sub {
-    template 'about' => $content{'about'};
-};
-
-
-get '/news' => sub {
-    template 'news' => $content{'news'};
-};
-
-get '/earlier_events' => sub {
-    template 'earlier_events' => $content{'earlier_events'};
+    # render it
+    template $page => $content{$page};
 };
 
 get '/rss' => sub {
-
     require XML::RSS;
     use Encode qw(decode);
 
