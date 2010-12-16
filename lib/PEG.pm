@@ -1,6 +1,7 @@
 package PEG;
 use Dancer ':syntax';
 use Encode qw(decode);
+use XML::RSS;
 
 our $VERSION = '0.1';
 
@@ -122,40 +123,45 @@ get qr{^ / (\w+) $ }x => sub {
 };
 
 get '/rss' => sub {
-    require XML::RSS;
-
-    my $rss = XML::RSS->new( version => '1.0' );
+    my $rss  = XML::RSS->new( version => '1.0' );
     my $year = 1900 + (localtime)[5];
-    my $url = 'http://perl-ecosystem.org';
+    my $url  = 'http://perl-ecosystem.org';
+
     $rss->channel(
         title       => "Perl Ecosystem Group",
         link        => "$url/",
         description => 'Bridging the gap between business and the open source Perl community',
-        dc => {
+        dc          => {
             language  => 'en-us',
             publisher => 'gabor@perl-ecosystem.org',
             rights    => "Copyright 2010-$year, Perl Ecosystem Group",
         },
-        syn => {
+
+        syn         => {
             updatePeriod     => "hourly",
             updateFrequency  => "1",
             updateBase       => "1901-01-01T00:00+00:00",
         }
     );
+
     my $news = _read_news();
+
     foreach my $n (@$news) {
         my $text = $n->{text};
         $text =~ s{"/}{"$url/}g;
+
         $rss->add_item(
-            title => decode('utf-8', $n->{title}),
-            link  => $url . ($n->{permalink} || '/news'), 
-            description => decode('utf-8', $text),
-            dc => {
-                creator => $n->{author},
-                date    => $n->{date},
-                subject => ($n->{tags} and ref($n->{tags}) eq 'ARRAY' 
-                                ?   join(', ', @{ $n->{tags} })
-                                :   ''),
+            title       => decode( 'utf-8', $n->{title} ),
+            link        => $url . ( $n->{permalink} || '/news' ),
+            description => decode( 'utf-8', $text ),
+            dc          => {
+                creator  => $n->{author},
+                date     => $n->{date},
+                subject  => (
+                    $n->{tags} and ref( $n->{tags} ) eq 'ARRAY'  ?
+                                   join( ', ', @{ $n->{tags} } ) :
+                                   ''
+                ),
             },
         );
     }
