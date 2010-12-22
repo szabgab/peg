@@ -2,4 +2,6 @@ layout:   "main"
 appname:  "PEG"
 template: template_toolkit
 charset:  "UTF-8"
-
+engines:
+    template_toolkit:
+        WRAPPER: 'layouts/main.tt'
