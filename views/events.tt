@@ -1,3 +1,6 @@
+<% META title       = 'List of upcoming events' %>
+<% META subtitle    = 'Events' %>
+<% META description = 'Events where the The Perl Ecosystem Group will organize Perl related talks and will setup a Perl themed booth.' %>
 
 <div id="getting-started">
 

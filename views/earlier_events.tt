@@ -1,3 +1,6 @@
+<% META title       = 'Earlier events' %>
+<% META subtitle    = 'Earlier events' %>
+<% META description = 'A list of events we participated at. Even before the Perl Ecosystem Group was setup' %>
 
 <div id="getting-started">
 

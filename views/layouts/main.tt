@@ -2,12 +2,12 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
-  <title><% title %></title>
+  <title><% template.title %></title>
   <link rel="stylesheet" href="/css/style.css" />
   <meta http-equiv="Content-Language" content="en" />
   <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
   <meta name="keywords" content="Perl, training, consulting, business, community, promotion, advocacy" />
-  <meta name="description" content="<% description %>" />
+  <meta name="description" content="<% template.description %>" />
   <link href="/rss" rel="alternate" type="application/rss+xml" title ="Perl Ecosystem Group" />
 </head>
 <body>
@@ -16,7 +16,7 @@
   <div id="sidebar">
     <ul id="sidebar-items">
       <li>
-        <h3><% subtitle %></h3>
+        <h3><% template.subtitle %></h3>
         <ul class="links">
           <li><a href="/what">What</a></li>
           <li><a href="/who">Who</a></li>
