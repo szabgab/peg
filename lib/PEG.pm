@@ -20,17 +20,9 @@ my $news            = _read_news();
 # this will be refactored out into the templates later
 # will use auto pages for this
 my %content = (
-    events => {
-        events       => $upcoming_events,
-    },
-
-    news => {
-        news         => $news,
-    },
-
-    earlier_events => {
-        events       => $earlier_events,
-    },
+    earlier_events => { events => $earlier_events  },
+    events         => { events => $upcoming_events },
+    news           => { news   => $news            },
 );
 
 get qr{^ / (?: index \. html )? $}x => sub {
