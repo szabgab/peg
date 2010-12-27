@@ -223,6 +223,27 @@
         - 21+
     - question: Number of CPAN modules you handed over to other people?
     - question: Number of CPAN modules you contributed to? (e.g. bug report, documentation, 
+    - question: How often have you reported a bug in the perl interpreter?
+      answers:
+        - none
+        - once
+        - Ocassionally
+        - Frequently
+    - question: How often have you provided code to fix a bug in the perl interpreter?
+    - question: How often have you provided code to add a feature to the perl interpreter?
+    - question: How often have you provided a bug report for a CPAN module?
+    - question: How often have you provided code to fix a bug in a CPAN module?
+    - question: How often have you provided code to add a feature to a CPAN module?
+    - question: The above for any Perl (or even other?) open source project?
+    - TODO: also include documentation in the above question
+    - TODO: probably the info regarding the perl interpreter is not that onteresting) 
+    - TODO: earlier ask how often have you found bugs in CPAN modules?
+    - T: maybe change the answers to real numbers?
     - question: What would it take to have you be more involved in the Perl communty? To contribute test, or tests reports or bug reports etc.
       other: What holds you back from contributing more? How could it be made easier for your to contribute?
+    - question: Which Advent calendar have you followed?
+    - question: Does your employer (client) contribute code/patches/documentation back to the Perl community?
+    - question: Other languages used
+      type: 10 rows in order to provide an ordering of the 10 most frequently used languages/technologies
+      answers: <include/list_of_languages.txt>
 
