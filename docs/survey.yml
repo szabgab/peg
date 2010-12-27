@@ -1,60 +1,62 @@
 ---
-- page: Perl
-- question: Which versions of Perl are you using?
-  type: multiple choice
-  answers:
-    - 5.4
-    - 5.0005
-    - 5.6
-    - 5.8
-    - 5.10
-    - 5.12
-- question: Which version of Perl are you using the most?
-  type: single choice
-  answers:
-    - 5.4
-    - 5.0005
-    - 5.6
-    - 5.8
-    - 5.10
-    - 5.12
-- question: Operating systems for development
-  type: multiple choice
-  answers: <TODO: list lots of OSes>
-- question: Primary Operating system for development
-  type: single choice
-  answers: <TODO: list lots of OSes>
-- question: Operating systems for deployment
-  type: multiple choice
-  answers: <TODO: list lots of OSes>
-- question: Primary Operating system for deployment
-  type: single choice
-  answers: <TODO: list lots of OSes>
-- question: If you are using Windows, which Perl distribution do you use the most?
-  answers: 
-    - ActivePerl of ActiveState
-    - StrawberryPerl
-    - Cygwin
-    - Other
-- page: Demographic
-- question: Gender
-  type: single choice
-  answers:
-    - Male
-    - Female
-    - Other (does not want to say)
-- question: Age group
-  type: single choice
-  answers:
-    - Under 20
-    - 20-24
-    - 25-29
-    - 30-39
-    - 40-49
-    - 50+
-- question: Country of residence
-  type: single choice
-  answers: <TODO: list of countries>
-- question: Country of origin (birth)
-  type: single choice
-  answers: <TODO: list of countries>
+- title: Perl
+  questions:
+    - question: Which versions of Perl are you using?
+      type: multiple choice
+      answers:
+        - 5.4
+        - 5.0005
+        - 5.6
+        - 5.8
+        - 5.10
+        - 5.12
+    - question: Which version of Perl are you using the most?
+      type: single choice
+      answers:
+        - 5.4
+        - 5.0005
+        - 5.6
+        - 5.8
+        - 5.10
+        - 5.12
+    - question: Operating systems for development
+      type: multiple choice
+      answers: <TODO: list lots of OSes>
+    - question: Primary Operating system for development
+      type: single choice
+      answers: <TODO: list lots of OSes>
+    - question: Operating systems for deployment
+      type: multiple choice
+      answers: <TODO: list lots of OSes>
+    - question: Primary Operating system for deployment
+      type: single choice
+      answers: <TODO: list lots of OSes>
+    - question: If you are using Windows, which Perl distribution do you use the most?
+      answers: 
+        - ActivePerl of ActiveState
+        - StrawberryPerl
+        - Cygwin
+        - Other
+- title: Demographic
+  questions:
+    - question: Gender
+      type: single choice
+      answers:
+        - Male
+        - Female
+        - Other (does not want to say)
+    - question: Age group
+      type: single choice
+      answers:
+        - Under 20
+        - 20-24
+        - 25-29
+        - 30-39
+        - 40-49
+        - 50+
+    - question: Country of residence
+      type: single choice
+      answers: <TODO: list of countries>
+    - question: Country of origin (birth)
+      type: single choice
+      answers: <TODO: list of countries>
