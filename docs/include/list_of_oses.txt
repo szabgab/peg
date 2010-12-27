@@ -1,0 +1,53 @@
+Amiga
+Android
+Apollo
+BeOS
+Bs2000
+BSD FreeBSD
+BSD netbsd
+BSD openbsd
+EPOC
+GNU Hurd
+Linux Centos
+Linux Debian
+Linux Fedora
+Linux Gentoo
+Linux other
+Linux RedHat
+Linux Suse
+Linux Ubuntu
+Macos pre OS X 
+Mac OSX
+Mac OS X for iPhone iPod Touch
+Mac OS X for personal computers
+Mac OS X Server
+Minix
+MSDOS
+MVS
+OS 2
+OS 390
+OS 400
+Palm OS	3
+Plan 9
+QNX
+RiscOS
+Symbian
+Unix AIX
+Unix DG UX
+Unix HPUX
+Unix IRIX
+Unix NeXT
+Unix Other
+Unix Solaris
+Unix Tru64
+VMS
+Windows 2003 server
+Windows 2k
+Windows 7
+Windows 95
+Windows 98
+Windows CE
+Windows ME
+Windows NT
+Windows Vista
+Windows XP
