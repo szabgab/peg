@@ -1,0 +1,17 @@
+The result of the TPF survey from 2010 can be found here: http://survey.perlfoundation.org/Data-PerlSurvey-2010/R/
+Several blog posts about the survey can be found here:
+http://blogs.perl.org/users/holy_zarquons_singing_fish/2010/11/final-perl-survey-grant-report.html
+http://blogs.perl.org/users/holy_zarquons_singing_fish/2010/08/well-that-was-painful.html
+http://blogs.perl.org/users/holy_zarquons_singing_fish/2010/05/the-perl-survey-2010-is-ready-for-you-to-complete.html
+
+
+According to these blog entries TPF intends to run this survey every 2-3 years while we think 
+it would be important to run such survey more often and to include more question in
+the survey.
+That will help us understand both how the Perl community is changing, where people who have 
+left the Perl community have gone and what people who are not in the community see it.
+We can also try to reach the wider Perl ecosystem. The people who use Perl very rarely 
+or who are using the language but are not involved in the community.
+
+
+

@@ -2,7 +2,7 @@
 - title: Perl
   questions:
     - question: Which versions of Perl are you using?
-      type: multiple choice
+      type: multiple_choice
       answers:
         - 5.4
         - 5.0005

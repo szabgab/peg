@@ -18,9 +18,7 @@ Linux Suse
 Linux Ubuntu
 Macos pre OS X 
 Mac OSX
-Mac OS X for iPhone iPod Touch
-Mac OS X for personal computers
-Mac OS X Server
+iPhone
 Minix
 MSDOS
 MVS
