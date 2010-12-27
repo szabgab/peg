@@ -1,0 +1,44 @@
+Anjuta
+BBEdit
+Crimson
+DzSoft Perl
+Eclipse EPIC
+EditPlus
+Emacs
+EngInSite Perl
+Far
+Geany
+Gedit
+Gvim
+Jed
+JEdit
+Joe
+Kate
+KDevelop
+KEdit
+Kephra
+Komodo Edit
+Komodo IDE
+Mcedit
+Nano
+NEdit
+Notepad
+Notepad
+Notepad2
+Open Perl IDE
+OptiPerl
+Padre
+Perl Express
+PerlWiz
+Pico
+PSPad
+SciTE
+SlickEdit
+Smultron
+TextMate
+TextPad
+TextWrangler
+Ultra Edit
+Vi
+Vim
+Xemacs

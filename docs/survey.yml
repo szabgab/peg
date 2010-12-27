@@ -21,22 +21,52 @@
         - 5.12
     - question: Operating systems for development
       type: multiple choice
-      answers: <TODO: list lots of OSes>
+      answers: <include/list_of_oses.txt>
     - question: Primary Operating system for development
       type: single choice
-      answers: <TODO: list lots of OSes>
+      answers: <include/list_of_oses.txt>
     - question: Operating systems for deployment
       type: multiple choice
-      answers: <TODO: list lots of OSes>
+      answers: <include/list_of_oses.txt>
     - question: Primary Operating system for deployment
       type: single choice
-      answers: <TODO: list lots of OSes>
+      answers: <include/list_of_oses.txt>
     - question: If you are using Windows, which Perl distribution do you use the most?
       answers: 
         - ActivePerl of ActiveState
         - StrawberryPerl
         - Cygwin
         - Other
+- title: Other
+  questions:
+    - question: Which web development framework do you use?
+      answers:
+        - Dancer
+        - Mojolicious
+        - CGI::Appliction or Titanium
+        - Catalyst
+    - question: What is your primary editor/IDE?
+      answers: <include/list_of_editors.txt>
+    - question: What is your secondary editor/IDE?
+      answers: <include/list_of_editors.yml>
+    - question: Number of Perl Monger list subscribed to?
+      answers:
+        - 0
+        - 1
+        - 2-5
+        - 6+
+    - question: Which Perl related web forums are you using?
+    - question: Non-Perl related technical resources (list of news site e.g. TechRepublic)
+    - question: Where are you located in the Perl world?
+      type: multiple choice
+      answers:
+        - I am Larry Wall
+        - p5porter
+        - CPAN developer
+        - Write open source code but not on CPAN
+        - ...
+    - question: What other question would you ask in the next survey?
+      type: Free text
 - title: Demographic
   questions:
     - question: Gender
@@ -60,3 +90,44 @@
     - question: Country of origin (birth)
       type: single choice
       answers: <TODO: list of countries>
+    - question: Highest qualification
+      answers:
+        - TODO clarify
+        - School
+        - Technical Collage
+        - Bachelors
+        - Masters
+        - Phd
+    - question: Collage major (higher education major) (is this really interesting?)
+      answers:
+       - Computing
+       - Engineering
+       - Science
+       - Mathematics
+       - Languages
+       - Social Sciences
+       - Creative Arts
+       - Education
+    - question: Were you formally taught any Perl?
+      answers:
+       - None
+       - Almost none
+       - A little
+       - Quite a bit
+       - A lot
+    - question: Would you thing attending a Perl course would improve your knowledge?
+      answers:
+        - Not at all
+        - A little bit
+        - Qite a bit
+        - A lot
+    - question: Were you formally taught any Other dynamic languages?
+      answers: TODO
+    - question: Source of your perl knowledge?
+      answers:
+        - Books
+        - perldocs
+        - Peers
+        - mailing list
+        - IRC
+
