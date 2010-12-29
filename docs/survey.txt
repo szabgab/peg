@@ -13,5 +13,15 @@ left the Perl community have gone and what people who are not in the community s
 We can also try to reach the wider Perl ecosystem. The people who use Perl very rarely 
 or who are using the language but are not involved in the community.
 
+We should try to understand the behavior of people in the "perl community" and in the industry and
+see the differences.
+So for every question ask for an answer regarding open source projects and corporate projects.
+What kind of OOP are you using?
+Do you use Perl::Critic? 
+Do you write test using the Test::* framework?
 
+How people are using Perl and other open source software
+How people participate in and perceive open source software
+
+How people who are not using perl perceive it?
 

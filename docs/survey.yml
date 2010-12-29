@@ -32,22 +32,26 @@ pages:
           - 5.12
   - title: Perl 6
     questions:
-      - question: How much Perl 6 do you know ?
+      - question: How much Perl 6 do you know?
+        type: multiple_choice
         answers:
-          - none
-          - I read some of the docs and wrote small snippets of code
-          - I wrote module(s)
+          - I've read some of the documentation
+          - I've read most/all of the documentation
+          - I've participated in the mailing lists/irc. 
+          - I've helped the effort by writing tests
+          - I've helped with the documentation."
+          - I wrote small snippets of code
+          - I wrote full module(s)
           - I use it in production environment
-  - title: Perl Jobs
-    questions:
-      - question: As an employee, how difficult is it to find a job?
+      - question: If you haven't already used Perl 6 when do you plan to learn it?
+        type: single_choice
         answers:
-          - There are (almost) no Perl jobs in my travel distance.
-          - I could find easily elsewhere but I don't want to relocate.
-          - The salary that is offered is too low compare to other offers.
-      - question: As an employer, how difficult is it to find a perl developer?
-      - question: Something about jobs.perl.org
-  - title: Abc
+          - I plan to use Perl 5 from now on.
+          - I plan to learn Perl 6 and use it for some new programs.
+          - I plan to learn Perl 6 and use it for all new programs if the modules I need are available.
+      - question: Any comment you might have regarding Perl 6?
+        type: free_text
+  - title: Environment
     questions:
       - question: Operating systems for development
         type: multiple_choice
@@ -65,6 +69,26 @@ pages:
         type: single_choice
         other: yes
         answers: <include/list_of_oses.txt>
+      - question: Which version control systems are you using?
+        type: multiple_choice
+        answers:
+          - CSV
+          - Subversion
+          - Git
+          - Mercurius
+      - question: Which RDBM are you using?
+        other: yes
+        answers:
+          - MySQL
+          - PostgreSQL
+          - Oracle
+          - SQL Server (MS)
+          - SQLLite
+      - question: Which NoSQL are you using?
+        type: multiple_choice
+        other: yes
+        answers:
+          - MongoDB
       - question: If you are using Windows, which Perl distribution do you use the most?
         other: yes
         answers: 
@@ -111,8 +135,12 @@ pages:
           - http://perlmonks.org/
           - http://cpanforum.com/
           - http://stackoverflow.com/tags/perl/
-      - question: Non-Perl related technical resources (list of news site e.g. TechRepublic)
+      - question: Non-Perl related technical resources (TODO: list of news site)
         type: multiple_choice
+        answers:
+          - Mashable http://mashable.com/
+          - TechRepublic http://techrepublic.com.com/
+          - Google Alert http://www.google.com/alerts?hl=en
       - question: Where are you located in the Perl world?
         type: multiple_choice
         answers:
@@ -123,6 +151,15 @@ pages:
           - ...
       - question: What other question would you ask in the next survey?
         type: Free text
+  - title: Perl Jobs
+    questions:
+      - question: As an employee, how difficult is it to find a job?
+        answers:
+          - There are (almost) no Perl jobs in my travel distance.
+          - I could find easily elsewhere but I don't want to relocate.
+          - The salary that is offered is too low compare to other offers.
+      - question: As an employer, how difficult is it to find a perl developer?
+      - question: Something about jobs.perl.org
   - title: Demographic
     questions:
       - question: Gender
@@ -165,30 +202,6 @@ pages:
          - Social Sciences
          - Creative Arts
          - Education
-      - question: Were you formally taught any Perl?
-        type: single_choice
-        answers:
-         - None
-         - Almost none
-         - A little
-         - Quite a bit
-         - A lot
-      - question: Would you thing attending a Perl course would improve your knowledge?
-        answers:
-          - Not at all
-          - A little bit
-          - Qite a bit
-          - A lot
-      - question: Were you formally taught any other dynamic languages?
-        answers: TODO
-      - question: Source of your perl knowledge?
-        type: multiple_choice
-        answers:
-          - Books
-          - perldocs
-          - Peers
-          - mailing list
-          - IRC
       - question: Annual Income (in USD)
         type: single_choice
         answers:
@@ -214,6 +227,33 @@ pages:
           - CTO
           - CEO
           - Owner
+          - System architect
+          - Development Manager
+          - Executive or mid-manager
+      - question: Were you formally taught any Perl?
+        type: single_choice
+        answers:
+         - None
+         - Almost none
+         - A little
+         - Quite a bit
+         - A lot
+      - question: Would you thing attending a Perl course would improve your knowledge?
+        answers:
+          - Not at all
+          - A little bit
+          - Qite a bit
+          - A lot
+      - question: Were you formally taught any other dynamic languages?
+        answers: TODO
+      - question: Source of your perl knowledge?
+        type: multiple_choice
+        answers:
+          - Books
+          - perldocs
+          - Peers
+          - mailing list
+          - IRC
       - question: Years spent programming computers
         type: single_choice
         answers:
@@ -351,4 +391,6 @@ pages:
       - question: Other languages used
         type: 10 rows in order to provide an ordering of the 10 most frequently used languages/technologies
         answers: <include/list_of_languages.txt>
+      - question: Size of the company your work for
+      - question: Number of people in the tech department
   
