@@ -1,299 +1,301 @@
 ---
-- title: Perl
-  questions:
-    - question: Which versions of Perl 5 are you using?
-      type: multiple_choice
-      answers:
-        - 5.4
-        - 5.0005
-        - 5.6
-        - 5.8
-        - 5.10
-        - 5.12
-    - question: Which version of Perl are you using the most?
-      type: single choice
-      answers:
-        - 5.4
-        - 5.0005
-        - 5.6
-        - 5.8
-        - 5.10
-        - 5.12
-    - question: Which is the oldest version of Perl you still target with your code?
-      type: single_choice
-      answers:
-        - 5.4
-        - 5.0005
-        - 5.6
-        - 5.8
-        - 5.10
-        - 5.12
-    - question: How much Perl 6 do you know ?
-      answers:
-        - none
-        - I read some of the docs and wrote small snippets of code
-        - I wrote module(s)
-        - I use it in production environment
-    - question: Something about jobs.perl.org
-    - question: Operating systems for development
-      type: multiple choice
-      answers: <include/list_of_oses.txt>
-    - question: Primary Operating system for development
-      type: single choice
-      answers: <include/list_of_oses.txt>
-    - question: Operating systems for deployment
-      type: multiple choice
-      answers: <include/list_of_oses.txt>
-    - question: Primary Operating system for deployment
-      type: single choice
-      answers: <include/list_of_oses.txt>
-    - question: If you are using Windows, which Perl distribution do you use the most?
-      answers: 
-        - ActivePerl of ActiveState
-        - StrawberryPerl
-        - Cygwin
-        - Other
-- title: Other
-  questions:
-    - question: Which web development framework do you use?
-      answers:
-        - Dancer
-        - Mojolicious
-        - CGI::Appliction or Titanium
-        - Catalyst
-    - question: What is your primary editor/IDE?
-      answers: <include/list_of_editors.txt>
-    - question: What is your secondary editor/IDE?
-      answers: <include/list_of_editors.yml>
-    - question: Number of Perl Monger list subscribed to?
-      answers:
-        - 0
-        - 1
-        - 2-5
-        - 6+
-    - question: Which Perl related web forums are you using?
-    - question: Non-Perl related technical resources (list of news site e.g. TechRepublic)
-    - question: Where are you located in the Perl world?
-      type: multiple choice
-      answers:
-        - I am Larry Wall
-        - p5porter
-        - CPAN developer
-        - Write open source code but not on CPAN
-        - ...
-    - question: What other question would you ask in the next survey?
-      type: Free text
-- title: Demographic
-  questions:
-    - question: Gender
-      type: single choice
-      answers:
-        - Male
-        - Female
-        - Other (does not want to say)
-    - question: Age group
-      type: single choice
-      answers:
-        - Under 20
-        - 20-24
-        - 25-29
-        - 30-39
-        - 40-49
-        - 50+
-    - question: Country of residence
-      type: single choice
-      answers: <include/list_of_countries.txt>
-    - question: Country of origin (birth)
-      type: single choice
-      answers: <include/list_of_countries.txt>
-    - question: Highest qualification
-      answers:
-        - TODO clarify
-        - School
-        - Technical Collage
-        - Bachelors
-        - Masters
-        - Phd
-    - question: Collage major (higher education major) (is this really interesting?)
-      answers:
-       - Computing
-       - Engineering
-       - Science
-       - Mathematics
-       - Languages
-       - Social Sciences
-       - Creative Arts
-       - Education
-    - question: Were you formally taught any Perl?
-      answers:
-       - None
-       - Almost none
-       - A little
-       - Quite a bit
-       - A lot
-    - question: Would you thing attending a Perl course would improve your knowledge?
-      answers:
-        - Not at all
-        - A little bit
-        - Qite a bit
-        - A lot
-    - question: Were you formally taught any Other dynamic languages?
-      answers: TODO
-    - question: Source of your perl knowledge?
-      answers:
-        - Books
-        - perldocs
-        - Peers
-        - mailing list
-        - IRC
-    - question: Annual Income (in USD)
-      answers:
-        - 0-30,00
-        - 30,000-60,000
-        - 60,000-90,000
-        - 90,000-120,000
-        - 120,000+
-    - question: Industry sector
-      answers: <include/industry_sectors.txt>
-    - question: Job title (the highest position you hold in your workplace)
-      type: single choice
-      answers:
-        - Programmer
-        - Developer
-        - QA Engineer
-        - Tester
-        - System Administrator
-        - CM Engineer
-        - VP RnD
-        - Team leader
-        - CTO
-        - CEO
-        - Owner
-    - question: The biggest issues the Perl ecosystem faces
-    - question: Years spent programming computers
-      answers:
-        - 21-
-        - 11-20
-        - 7-10
-        - 4-6
-        - 1-3
-        - less than 1
-    - question: Years spent programming Perl
-      answers:
-        - 21-
-        - 11-20
-        - 7-10
-        - 4-6
-        - 1-3
-        - less than 1
-    - question: Time at work spent programming
-      answers:
-        - more than 2/3
-        - 1/2-2/3
-        - 1/3-1/2
-        - < 1/3
-        - ~ 0
-    - question: Time at work spent not on code
-      answers:
-        - more than 2/3
-        - 1/2-2/3
-        - 1/3-1/2
-        - < 1/3
-        - ~ 0
-    - question: Time spent programming Perl
-    - question: Spare time spent programming 
-    - question: Where do you get your Perl related news from?
-      type: multiple choice
-      answers:
-        - use.perl.org
-        - blogs.perl.org
-        - http://news.perlfoundation.org/
-        - http://perl.org
-        - Planet Perl http://planet.perl.org/
-        - http://www.reddit.com/r/perl
-        - http://news.ycombinator.com/
-        - Planet Six http://planetsix.perl.org/
-        - Perlsphere http://perlsphere.net/
-        - Planet Parrot http://planet.parrotcode.org/
-        - Ironman: http://ironman.enlightenedperl.org/
-        - Other ?
-    - question: Would you be interested in getting paid to work on open source Perl code? 
-    - question: What is your major issues with the Perl ecosystem?
-    - question: What is your employers (clients)  major issues with the Perl ecosystem?
-    - question: What would you think if some people were paid to work on the perl core?
-    - question: About the TPF grants: Do you think there should be more grant requests?
-    - question: How much money would you be ready to contribute for devloping the Perl ecosystem  (USD / month)
-      more: (a mixture of developing and promoting perl, CPAN packages, open source perl applications)
-      answers:
-        - 0
-        - 1-4
-        - 5-9
-        - 10-19
-        - 20-29
-        - 30-49
-        - 50-
-    - question: What do you use to create object oriented code in Perl?
-      answers:
-        - I don't write OOP
-        - Moose
-        - Calling bless on plain hash-refs
-    - question: Number of CPAN modules you maintain?
-      type: single_choice
-      answers:
-        - 0
-        - 1-5
-        - 6-20
-        - 21+
-    - question: Number of CPAN modules you handed over to other people?
-      type: single_choice
-      answers:
-        - 0
-        - 1-5
-        - 6-20
-        - 21+
-    - question: Number of CPAN modules you contributed to? (e.g. bug report, documentation, test, code)
-      type: single_choice
-      answers:
-        - 0
-        - 1-5
-        - 6-20
-        - 21+ 
-    - question: How often have you reported a bug in the perl interpreter?
-      type: single_choice
-      answers:
-        - Never
-        - Once
-        - Ocassionally
-        - Frequently
-    - question: How often have you provided code to fix a bug in the perl interpreter?
-    - question: How often have you provided code to add a feature to the perl interpreter?
-    - question: How often have you provided a bug report for a CPAN module?
-    - question: How often have you provided code to fix a bug in a CPAN module?
-    - question: How often have you provided code to add a feature to a CPAN module?
-    - question: The above for any Perl (or even other?) open source project?
-    - TODO: also include documentation in the above question
-    - TODO: probably the info regarding the perl interpreter is not that onteresting) 
-    - TODO: earlier ask how often have you found bugs in CPAN modules?
-    - TODO: maybe change the answers to real numbers?
-    - question: What would it take to have you be more involved in the Perl communty? To contribute test, or tests reports or bug reports etc.
-      other: What holds you back from contributing more? How could it be made easier for your to contribute?
-    - question: Which Advent calendar have you followed?
-      type: multiple_choice
-      answers:
-        - Dancer http://advent.perldancer.org/2010
-        - RJBS http://advent.rjbs.manxome.org/2010/
-        - Catalyst http://www.catalystframework.org/calendar
-        - Perl Advent http://perladvent.pm.org/2010/
-        - Japanese Perlers in english http://perl-users.jp/articles/advent-calendar/2010/english/ 
-        - Perl6 http://perl6advent.wordpress.com/
-      other: yes
-    - question: How much does your employer (client) contribute code/patches/documentation back to the Perl community?
-      answers:
-        - None
-        - Rarely
-        - Encourages us to do so
-        - Most of our code is released as Open Source 
-    - question: Other languages used
-      type: 10 rows in order to provide an ordering of the 10 most frequently used languages/technologies
-      answers: <include/list_of_languages.txt>
-
+title: Perl Ecosystem Survey
+pages:
+  - title: Perl
+    questions:
+      - question: Which versions of Perl 5 are you using?
+        type: multiple_choice
+        answers:
+          - 5.4
+          - 5.0005
+          - 5.6
+          - 5.8
+          - 5.10
+          - 5.12
+      - question: Which version of Perl are you using the most?
+        type: single choice
+        answers:
+          - 5.4
+          - 5.0005
+          - 5.6
+          - 5.8
+          - 5.10
+          - 5.12
+      - question: Which is the oldest version of Perl you still target with your code?
+        type: single_choice
+        answers:
+          - 5.4
+          - 5.0005
+          - 5.6
+          - 5.8
+          - 5.10
+          - 5.12
+      - question: How much Perl 6 do you know ?
+        answers:
+          - none
+          - I read some of the docs and wrote small snippets of code
+          - I wrote module(s)
+          - I use it in production environment
+      - question: Something about jobs.perl.org
+      - question: Operating systems for development
+        type: multiple choice
+        answers: <include/list_of_oses.txt>
+      - question: Primary Operating system for development
+        type: single choice
+        answers: <include/list_of_oses.txt>
+      - question: Operating systems for deployment
+        type: multiple choice
+        answers: <include/list_of_oses.txt>
+      - question: Primary Operating system for deployment
+        type: single choice
+        answers: <include/list_of_oses.txt>
+      - question: If you are using Windows, which Perl distribution do you use the most?
+        answers: 
+          - ActivePerl of ActiveState
+          - StrawberryPerl
+          - Cygwin
+          - Other
+  - title: Other
+    questions:
+      - question: Which web development framework do you use?
+        answers:
+          - Dancer
+          - Mojolicious
+          - CGI::Appliction or Titanium
+          - Catalyst
+      - question: What is your primary editor/IDE?
+        answers: <include/list_of_editors.txt>
+      - question: What is your secondary editor/IDE?
+        answers: <include/list_of_editors.yml>
+      - question: Number of Perl Monger list subscribed to?
+        answers:
+          - 0
+          - 1
+          - 2-5
+          - 6+
+      - question: Which Perl related web forums are you using?
+      - question: Non-Perl related technical resources (list of news site e.g. TechRepublic)
+      - question: Where are you located in the Perl world?
+        type: multiple choice
+        answers:
+          - I am Larry Wall
+          - p5porter
+          - CPAN developer
+          - Write open source code but not on CPAN
+          - ...
+      - question: What other question would you ask in the next survey?
+        type: Free text
+  - title: Demographic
+    questions:
+      - question: Gender
+        type: single choice
+        answers:
+          - Male
+          - Female
+          - Other (does not want to say)
+      - question: Age group
+        type: single choice
+        answers:
+          - Under 20
+          - 20-24
+          - 25-29
+          - 30-39
+          - 40-49
+          - 50+
+      - question: Country of residence
+        type: single choice
+        answers: <include/list_of_countries.txt>
+      - question: Country of origin (birth)
+        type: single choice
+        answers: <include/list_of_countries.txt>
+      - question: Highest qualification
+        answers:
+          - TODO clarify
+          - School
+          - Technical Collage
+          - Bachelors
+          - Masters
+          - Phd
+      - question: Collage major (higher education major) (is this really interesting?)
+        answers:
+         - Computing
+         - Engineering
+         - Science
+         - Mathematics
+         - Languages
+         - Social Sciences
+         - Creative Arts
+         - Education
+      - question: Were you formally taught any Perl?
+        answers:
+         - None
+         - Almost none
+         - A little
+         - Quite a bit
+         - A lot
+      - question: Would you thing attending a Perl course would improve your knowledge?
+        answers:
+          - Not at all
+          - A little bit
+          - Qite a bit
+          - A lot
+      - question: Were you formally taught any Other dynamic languages?
+        answers: TODO
+      - question: Source of your perl knowledge?
+        answers:
+          - Books
+          - perldocs
+          - Peers
+          - mailing list
+          - IRC
+      - question: Annual Income (in USD)
+        answers:
+          - 0-30,00
+          - 30,000-60,000
+          - 60,000-90,000
+          - 90,000-120,000
+          - 120,000+
+      - question: Industry sector
+        answers: <include/industry_sectors.txt>
+      - question: Job title (the highest position you hold in your workplace)
+        type: single choice
+        answers:
+          - Programmer
+          - Developer
+          - QA Engineer
+          - Tester
+          - System Administrator
+          - CM Engineer
+          - VP RnD
+          - Team leader
+          - CTO
+          - CEO
+          - Owner
+      - question: The biggest issues the Perl ecosystem faces
+      - question: Years spent programming computers
+        answers:
+          - 21-
+          - 11-20
+          - 7-10
+          - 4-6
+          - 1-3
+          - less than 1
+      - question: Years spent programming Perl
+        answers:
+          - 21-
+          - 11-20
+          - 7-10
+          - 4-6
+          - 1-3
+          - less than 1
+      - question: Time at work spent programming
+        answers:
+          - more than 2/3
+          - 1/2-2/3
+          - 1/3-1/2
+          - < 1/3
+          - ~ 0
+      - question: Time at work spent not on code
+        answers:
+          - more than 2/3
+          - 1/2-2/3
+          - 1/3-1/2
+          - < 1/3
+          - ~ 0
+      - question: Time spent programming Perl
+      - question: Spare time spent programming 
+      - question: Where do you get your Perl related news from?
+        type: multiple choice
+        answers:
+          - use.perl.org
+          - blogs.perl.org
+          - http://news.perlfoundation.org/
+          - http://perl.org
+          - Planet Perl http://planet.perl.org/
+          - http://www.reddit.com/r/perl
+          - http://news.ycombinator.com/
+          - Planet Six http://planetsix.perl.org/
+          - Perlsphere http://perlsphere.net/
+          - Planet Parrot http://planet.parrotcode.org/
+          - Ironman: http://ironman.enlightenedperl.org/
+          - Other ?
+      - question: Would you be interested in getting paid to work on open source Perl code? 
+      - question: What is your major issues with the Perl ecosystem?
+      - question: What is your employers (clients)  major issues with the Perl ecosystem?
+      - question: What would you think if some people were paid to work on the perl core?
+      - question: About the TPF grants: Do you think there should be more grant requests?
+      - question: How much money would you be ready to contribute for devloping the Perl ecosystem  (USD / month)
+        more: (a mixture of developing and promoting perl, CPAN packages, open source perl applications)
+        answers:
+          - 0
+          - 1-4
+          - 5-9
+          - 10-19
+          - 20-29
+          - 30-49
+          - 50-
+      - question: What do you use to create object oriented code in Perl?
+        answers:
+          - I don't write OOP
+          - Moose
+          - Calling bless on plain hash-refs
+      - question: Number of CPAN modules you maintain?
+        type: single_choice
+        answers:
+          - 0
+          - 1-5
+          - 6-20
+          - 21+
+      - question: Number of CPAN modules you handed over to other people?
+        type: single_choice
+        answers:
+          - 0
+          - 1-5
+          - 6-20
+          - 21+
+      - question: Number of CPAN modules you contributed to? (e.g. bug report, documentation, test, code)
+        type: single_choice
+        answers:
+          - 0
+          - 1-5
+          - 6-20
+          - 21+ 
+      - question: How often have you reported a bug in the perl interpreter?
+        type: single_choice
+        answers:
+          - Never
+          - Once
+          - Ocassionally
+          - Frequently
+      - question: How often have you provided code to fix a bug in the perl interpreter?
+      - question: How often have you provided code to add a feature to the perl interpreter?
+      - question: How often have you provided a bug report for a CPAN module?
+      - question: How often have you provided code to fix a bug in a CPAN module?
+      - question: How often have you provided code to add a feature to a CPAN module?
+      - question: The above for any Perl (or even other?) open source project?
+      - TODO: also include documentation in the above question
+      - TODO: probably the info regarding the perl interpreter is not that onteresting) 
+      - TODO: earlier ask how often have you found bugs in CPAN modules?
+      - TODO: maybe change the answers to real numbers?
+      - question: What would it take to have you be more involved in the Perl communty? To contribute test, or tests reports or bug reports etc.
+        other: What holds you back from contributing more? How could it be made easier for your to contribute?
+      - question: Which Advent calendar have you followed?
+        type: multiple_choice
+        answers:
+          - Dancer http://advent.perldancer.org/2010
+          - RJBS http://advent.rjbs.manxome.org/2010/
+          - Catalyst http://www.catalystframework.org/calendar
+          - Perl Advent http://perladvent.pm.org/2010/
+          - Japanese Perlers in english http://perl-users.jp/articles/advent-calendar/2010/english/ 
+          - Perl6 http://perl6advent.wordpress.com/
+        other: yes
+      - question: How much does your employer (client) contribute code/patches/documentation back to the Perl community?
+        answers:
+          - None
+          - Rarely
+          - Encourages us to do so
+          - Most of our code is released as Open Source 
+      - question: Other languages used
+        type: 10 rows in order to provide an ordering of the 10 most frequently used languages/technologies
+        answers: <include/list_of_languages.txt>
+  
