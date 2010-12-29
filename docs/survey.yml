@@ -1,7 +1,7 @@
 ---
 title: Perl Ecosystem Survey
 pages:
-  - title: Perl
+  - title: Perl 5
     questions:
       - question: Which versions of Perl 5 are you using?
         type: multiple_choice
@@ -13,7 +13,7 @@ pages:
           - 5.10
           - 5.12
       - question: Which version of Perl are you using the most?
-        type: single choice
+        type: single_choice
         answers:
           - 5.4
           - 5.0005
@@ -30,43 +30,74 @@ pages:
           - 5.8
           - 5.10
           - 5.12
+  - title: Perl 6
+    questions:
       - question: How much Perl 6 do you know ?
         answers:
           - none
           - I read some of the docs and wrote small snippets of code
           - I wrote module(s)
           - I use it in production environment
+  - title: Perl Jobs
+    questions:
+      - question: As an employee, how difficult is it to find a job?
+        answers:
+          - There are (almost) no Perl jobs in my travel distance.
+          - I could find easily elsewhere but I don't want to relocate.
+          - The salary that is offered is too low compare to other offers.
+      - question: As an employer, how difficult is it to find a perl developer?
       - question: Something about jobs.perl.org
+  - title: Abc
+    questions:
       - question: Operating systems for development
-        type: multiple choice
+        type: multiple_choice
+        other: yes
         answers: <include/list_of_oses.txt>
       - question: Primary Operating system for development
-        type: single choice
+        type: single_choice
+        other: yes
         answers: <include/list_of_oses.txt>
       - question: Operating systems for deployment
-        type: multiple choice
+        type: multiple_choice
+        other: yes
         answers: <include/list_of_oses.txt>
       - question: Primary Operating system for deployment
-        type: single choice
+        type: single_choice
+        other: yes
         answers: <include/list_of_oses.txt>
       - question: If you are using Windows, which Perl distribution do you use the most?
+        other: yes
         answers: 
           - ActivePerl of ActiveState
           - StrawberryPerl
           - Cygwin
-          - Other
   - title: Other
     questions:
-      - question: Which web development framework do you use?
+      - question: What do you use to create object oriented code in Perl?
         answers:
+          - I don't write OOP
+          - Moose
+          - Calling bless on plain hash-refs
+      - question: Which web development framework do you use?
+        other: yes
+        answers:
+          - I don't develop web applications
+          - plain old CGI
           - Dancer
           - Mojolicious
           - CGI::Appliction or Titanium
           - Catalyst
+          - Maypole
+          - Mason
+          - thin PSGI layer
       - question: What is your primary editor/IDE?
+        other: yes
         answers: <include/list_of_editors.txt>
       - question: What is your secondary editor/IDE?
+        other: yes
         answers: <include/list_of_editors.yml>
+  - title: Community Involvement
+    questions:
       - question: Number of Perl Monger list subscribed to?
         answers:
           - 0
@@ -74,9 +105,16 @@ pages:
           - 2-5
           - 6+
       - question: Which Perl related web forums are you using?
+        type: multiple_choice
+        other: yes
+        answers:
+          - http://perlmonks.org/
+          - http://cpanforum.com/
+          - http://stackoverflow.com/tags/perl/
       - question: Non-Perl related technical resources (list of news site e.g. TechRepublic)
+        type: multiple_choice
       - question: Where are you located in the Perl world?
-        type: multiple choice
+        type: multiple_choice
         answers:
           - I am Larry Wall
           - p5porter
@@ -88,13 +126,13 @@ pages:
   - title: Demographic
     questions:
       - question: Gender
-        type: single choice
+        type: single_choice
         answers:
           - Male
           - Female
           - Other (does not want to say)
       - question: Age group
-        type: single choice
+        type: single_choice
         answers:
           - Under 20
           - 20-24
@@ -103,14 +141,15 @@ pages:
           - 40-49
           - 50+
       - question: Country of residence
-        type: single choice
+        type: single_choice
         answers: <include/list_of_countries.txt>
       - question: Country of origin (birth)
-        type: single choice
+        type: single_choice
         answers: <include/list_of_countries.txt>
       - question: Highest qualification
+        type: single_choice
         answers:
-          - TODO clarify
+          - TODO clarify these items, e.g. what is School?
           - School
           - Technical Collage
           - Bachelors
@@ -127,6 +166,7 @@ pages:
          - Creative Arts
          - Education
       - question: Were you formally taught any Perl?
+        type: single_choice
         answers:
          - None
          - Almost none
@@ -139,9 +179,10 @@ pages:
           - A little bit
           - Qite a bit
           - A lot
-      - question: Were you formally taught any Other dynamic languages?
+      - question: Were you formally taught any other dynamic languages?
         answers: TODO
       - question: Source of your perl knowledge?
+        type: multiple_choice
         answers:
           - Books
           - perldocs
@@ -149,6 +190,7 @@ pages:
           - mailing list
           - IRC
       - question: Annual Income (in USD)
+        type: single_choice
         answers:
           - 0-30,00
           - 30,000-60,000
@@ -158,7 +200,8 @@ pages:
       - question: Industry sector
         answers: <include/industry_sectors.txt>
       - question: Job title (the highest position you hold in your workplace)
-        type: single choice
+        type: single_choice
+        other: yes
         answers:
           - Programmer
           - Developer
@@ -171,8 +214,8 @@ pages:
           - CTO
           - CEO
           - Owner
-      - question: The biggest issues the Perl ecosystem faces
       - question: Years spent programming computers
+        type: single_choice
         answers:
           - 21-
           - 11-20
@@ -181,6 +224,7 @@ pages:
           - 1-3
           - less than 1
       - question: Years spent programming Perl
+        type: single_choice
         answers:
           - 21-
           - 11-20
@@ -188,7 +232,10 @@ pages:
           - 4-6
           - 1-3
           - less than 1
+  - title: On the job
+    questions:
       - question: Time at work spent programming
+        type: single_choice
         answers:
           - more than 2/3
           - 1/2-2/3
@@ -196,6 +243,7 @@ pages:
           - < 1/3
           - ~ 0
       - question: Time at work spent not on code
+        type: single_choice
         answers:
           - more than 2/3
           - 1/2-2/3
@@ -204,8 +252,18 @@ pages:
           - ~ 0
       - question: Time spent programming Perl
       - question: Spare time spent programming 
+        type: single_choice
+        answers:
+          - none
+          - 1 hour / week
+          - 2-6 hours / week
+          - 1-2 hours / day 
+          - 3+ hours / day
+  - title: News
+    questions:
       - question: Where do you get your Perl related news from?
-        type: multiple choice
+        type: multiple_choice
+        other: yes
         answers:
           - use.perl.org
           - blogs.perl.org
@@ -218,14 +276,14 @@ pages:
           - Perlsphere http://perlsphere.net/
           - Planet Parrot http://planet.parrotcode.org/
           - Ironman: http://ironman.enlightenedperl.org/
-          - Other ?
+      - question: The biggest issues the Perl ecosystem faces
       - question: Would you be interested in getting paid to work on open source Perl code? 
       - question: What is your major issues with the Perl ecosystem?
       - question: What is your employers (clients)  major issues with the Perl ecosystem?
       - question: What would you think if some people were paid to work on the perl core?
       - question: About the TPF grants: Do you think there should be more grant requests?
       - question: How much money would you be ready to contribute for devloping the Perl ecosystem  (USD / month)
-        more: (a mixture of developing and promoting perl, CPAN packages, open source perl applications)
+        comment: (a mixture of developing and promoting perl, CPAN packages, open source perl applications)
         answers:
           - 0
           - 1-4
@@ -234,11 +292,6 @@ pages:
           - 20-29
           - 30-49
           - 50-
-      - question: What do you use to create object oriented code in Perl?
-        answers:
-          - I don't write OOP
-          - Moose
-          - Calling bless on plain hash-refs
       - question: Number of CPAN modules you maintain?
         type: single_choice
         answers:
