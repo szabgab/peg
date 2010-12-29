@@ -1,7 +1,7 @@
 ---
 - title: Perl
   questions:
-    - question: Which versions of Perl are you using?
+    - question: Which versions of Perl 5 are you using?
       type: multiple_choice
       answers:
         - 5.4
@@ -19,6 +19,22 @@
         - 5.8
         - 5.10
         - 5.12
+    - question: Which is the oldest version of Perl you still target with your code?
+      type: single_choice
+      answers:
+        - 5.4
+        - 5.0005
+        - 5.6
+        - 5.8
+        - 5.10
+        - 5.12
+    - question: How much Perl 6 do you know ?
+      answers:
+        - none
+        - I read some of the docs and wrote small snippets of code
+        - I wrote module(s)
+        - I use it in production environment
+    - question: Something about jobs.perl.org
     - question: Operating systems for development
       type: multiple choice
       answers: <include/list_of_oses.txt>
@@ -145,7 +161,13 @@
         - Programmer
         - Developer
         - QA Engineer
+        - Tester
+        - System Administrator
+        - CM Engineer
+        - VP RnD
+        - Team leader
         - CTO
+        - CEO
         - Owner
     - question: The biggest issues the Perl ecosystem faces
     - question: Years spent programming computers
@@ -186,13 +208,13 @@
         - use.perl.org
         - blogs.perl.org
         - http://news.perlfoundation.org/
-        - perl.org
-        - Planet Perl
-        - reddit/perl
-        - ycombinator
-        - PLanet Six
-        - Perlsphere
-        - Planet Parrot
+        - http://perl.org
+        - Planet Perl http://planet.perl.org/
+        - http://www.reddit.com/r/perl
+        - http://news.ycombinator.com/
+        - Planet Six http://planetsix.perl.org/
+        - Perlsphere http://perlsphere.net/
+        - Planet Parrot http://planet.parrotcode.org/
         - Ironman: http://ironman.enlightenedperl.org/
         - Other ?
     - question: Would you be interested in getting paid to work on open source Perl code? 
@@ -215,18 +237,32 @@
         - I don't write OOP
         - Moose
         - Calling bless on plain hash-refs
-    - question: Number of CPAN modules you maintain
+    - question: Number of CPAN modules you maintain?
+      type: single_choice
       answers:
         - 0
         - 1-5
         - 6-20
         - 21+
     - question: Number of CPAN modules you handed over to other people?
-    - question: Number of CPAN modules you contributed to? (e.g. bug report, documentation, 
-    - question: How often have you reported a bug in the perl interpreter?
+      type: single_choice
       answers:
-        - none
-        - once
+        - 0
+        - 1-5
+        - 6-20
+        - 21+
+    - question: Number of CPAN modules you contributed to? (e.g. bug report, documentation, test, code)
+      type: single_choice
+      answers:
+        - 0
+        - 1-5
+        - 6-20
+        - 21+ 
+    - question: How often have you reported a bug in the perl interpreter?
+      type: single_choice
+      answers:
+        - Never
+        - Once
         - Ocassionally
         - Frequently
     - question: How often have you provided code to fix a bug in the perl interpreter?
@@ -238,11 +274,25 @@
     - TODO: also include documentation in the above question
     - TODO: probably the info regarding the perl interpreter is not that onteresting) 
     - TODO: earlier ask how often have you found bugs in CPAN modules?
-    - T: maybe change the answers to real numbers?
+    - TODO: maybe change the answers to real numbers?
     - question: What would it take to have you be more involved in the Perl communty? To contribute test, or tests reports or bug reports etc.
       other: What holds you back from contributing more? How could it be made easier for your to contribute?
     - question: Which Advent calendar have you followed?
-    - question: Does your employer (client) contribute code/patches/documentation back to the Perl community?
+      type: multiple_choice
+      answers:
+        - Dancer http://advent.perldancer.org/2010
+        - RJBS http://advent.rjbs.manxome.org/2010/
+        - Catalyst http://www.catalystframework.org/calendar
+        - Perl Advent http://perladvent.pm.org/2010/
+        - Japanese Perlers in english http://perl-users.jp/articles/advent-calendar/2010/english/ 
+        - Perl6 http://perl6advent.wordpress.com/
+      other: yes
+    - question: How much does your employer (client) contribute code/patches/documentation back to the Perl community?
+      answers:
+        - None
+        - Rarely
+        - Encourages us to do so
+        - Most of our code is released as Open Source 
     - question: Other languages used
       type: 10 rows in order to provide an ordering of the 10 most frequently used languages/technologies
       answers: <include/list_of_languages.txt>
