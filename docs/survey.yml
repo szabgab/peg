@@ -103,6 +103,7 @@ pages:
           - Moose
           - Calling bless on plain hash-refs
       - question: Which web development framework do you use?
+        type: multiple_choice
         other: yes
         answers:
           - I don't develop web applications
@@ -114,6 +115,22 @@ pages:
           - Maypole
           - Mason
           - thin PSGI layer
+      - question: What kind of web applications do you develop?
+        type: multiple_choice
+        other: yes
+        answers:
+          - REST
+          - SOAP
+          - XML/RPC
+          - traditional url=action
+          - Ajax
+      - question: Do you write web applications ... 
+        type: multiple_choice
+        other: yes
+        answers:
+          - for fun
+          - release open source
+          - at work
       - question: What is your primary editor/IDE?
         other: yes
         answers: <include/list_of_editors.txt>
@@ -141,6 +158,11 @@ pages:
           - Mashable http://mashable.com/
           - TechRepublic http://techrepublic.com.com/
           - Google Alert http://www.google.com/alerts?hl=en
+          - Linux Journal http://www.linuxjournal.com/
+          - Linux Magazine http://www.linux-mag.com/
+          - Slashdot http://slashdot.org/
+          - ZDNet http://www.zdnet.com/
+          - ITPro http://www.itpro.co.uk/
       - question: Where are you located in the Perl world?
         type: multiple_choice
         answers:
