@@ -115,6 +115,7 @@ pages:
           - Maypole
           - Mason
           - thin PSGI layer
+          - your own Plack::Middleware components
       - question: What kind of web applications do you develop?
         type: multiple_choice
         other: yes
@@ -124,6 +125,13 @@ pages:
           - XML/RPC
           - traditional url=action
           - Ajax
+      - question: Which web server are you using?
+        type: multiple_choice
+        other: yes
+        answers:
+          - Apache + CGI
+          - Apache + mod_perl
+          - Apache + FastCGI
       - question: Do you write web applications ... 
         type: multiple_choice
         other: yes
@@ -131,6 +139,14 @@ pages:
           - for fun
           - release open source
           - at work
+      - question: Which concurrent execution tool do you use?
+        type: multiple_choice
+        other: yes
+        answers:
+          - POE
+          - threads
+          - fork
+          - AnyEvent
       - question: What is your primary editor/IDE?
         other: yes
         answers: <include/list_of_editors.txt>
@@ -157,12 +173,17 @@ pages:
         answers:
           - Mashable http://mashable.com/
           - TechRepublic http://techrepublic.com.com/
-          - Google Alert http://www.google.com/alerts?hl=en
+          - Google Alert http://www.google.com/alerts
           - Linux Journal http://www.linuxjournal.com/
           - Linux Magazine http://www.linux-mag.com/
           - Slashdot http://slashdot.org/
           - ZDNet http://www.zdnet.com/
           - ITPro http://www.itpro.co.uk/
+          - PCWorld http://www.pcworld.com/
+          - TG Daily http://www.tgdaily.com/
+          - The H http://www.h-online.com/
+          - Linux Today http://www.linuxtoday.com/
+          - Datamation http://itmanagement.earthweb.com/
       - question: Where are you located in the Perl world?
         type: multiple_choice
         answers:
