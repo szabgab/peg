@@ -35,6 +35,7 @@ pages:
       - question: How much Perl 6 do you know?
         type: multiple_choice
         answers:
+          - Nothing except the name
           - I've read some of the documentation
           - I've read most/all of the documentation
           - I've participated in the mailing lists/irc. 
@@ -43,12 +44,51 @@ pages:
           - I wrote small snippets of code
           - I wrote full module(s)
           - I use it in production environment
+          - Some design ideas or history
+          - Enough for very simple programs
+          - Solid knowledge
       - question: If you haven't already used Perl 6 when do you plan to learn it?
         type: single_choice
         answers:
           - I plan to use Perl 5 from now on.
           - I plan to learn Perl 6 and use it for some new programs.
           - I plan to learn Perl 6 and use it for all new programs if the modules I need are available.
+      - question: I'll start learning Perl 6 ..  (select one or more that fits your opinion)
+        type: multiple_choice
+        other: yes
+        answers:
+          - when Larry Wall declares that Perl 6.0 is ready
+          - after a production release of a Perl 6 compiler.
+          - when the default running perl -v in my Linux distribution will say it is version 6.0 or later
+          - when it's about as fast as perl 5
+          - after the Learning Perl 6th edition will be published
+          - after Rakudo 1.0 is released
+          - after DBI and DBD::Mysql is ported
+          - Never
+          - I have already started to learn
+      - question:  How do you keep informed about Perl 6 (multiple answers)?
+        type: multiple_choice
+        other: yes
+        answers:
+          - I don't
+          - general tech news sites (slashdot, reddit, lwn, ...)
+          - mailing lists
+          - Perl 6 specific blogs or blog aggregators
+      - question: What do you think about the relation between 5 and 6?
+        answers:
+         - I don't
+         - Perl 5 was hurt by Perl 6
+         - Perl 5 benefits from Perl 6
+         - The two are mostly independent
+      - question: In what environment do you use Perl 6?
+        answers:
+          - I don't use at all
+          - Just playing with it
+          - Use it for some real world stuff for myself
+          - Use it for some real world stuff in-house
+          - Use it in a customer/public facing application
+      - question: The most important feature(s) I am missing before I can start using Rakudo:
+        type: free_text
       - question: Any comment you might have regarding Perl 6?
         type: free_text
   - title: Environment
