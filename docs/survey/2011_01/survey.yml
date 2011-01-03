@@ -30,6 +30,13 @@ pages:
           - 5.8
           - 5.10
           - 5.12
+      - question: If (or when) you are using Windows, which Perl distribution do you use the most?
+        type: single_choice
+        other: yes
+        answers: 
+          - ActivePerl of ActiveState
+          - Strawberry Perl
+          - Cygwin
   - title: Perl 6
     questions:
       - question: How much Perl 6 do you know?
@@ -38,35 +45,30 @@ pages:
           - Nothing except the name
           - I've read some of the documentation
           - I've read most/all of the documentation
-          - I've participated in the mailing lists/irc. 
+          - I've participated in the mailing lists/irc
           - I've helped the effort by writing tests
-          - I've helped with the documentation."
+          - I've helped with the documentation
           - I wrote small snippets of code
           - I wrote full module(s)
           - I use it in production environment
           - Some design ideas or history
           - Enough for very simple programs
           - Solid knowledge
-      - question: If you haven't already used Perl 6 when do you plan to learn it?
-        type: single_choice
-        answers:
-          - I plan to use Perl 5 from now on.
-          - I plan to learn Perl 6 and use it for some new programs.
-          - I plan to learn Perl 6 and use it for all new programs if the modules I need are available.
       - question: I'll start learning Perl 6 ..  (select one or more that fits your opinion)
         type: multiple_choice
         other: yes
         answers:
           - when Larry Wall declares that Perl 6.0 is ready
-          - after a production release of a Perl 6 compiler.
+          - after a production release of a Perl 6 compiler
           - when the default running perl -v in my Linux distribution will say it is version 6.0 or later
           - when it's about as fast as perl 5
           - after the Learning Perl 6th edition will be published
           - after Rakudo 1.0 is released
           - after DBI and DBD::Mysql is ported
-          - Never
+          - Never, I plan to use Perl 5 from now on
+          - Never, I don't use Perl and don't plan to use it
           - I have already started to learn
-      - question:  How do you keep informed about Perl 6 (multiple answers)?
+      - question:  How do you keep informed about Perl 6?
         type: multiple_choice
         other: yes
         answers:
@@ -75,23 +77,30 @@ pages:
           - mailing lists
           - Perl 6 specific blogs or blog aggregators
       - question: What do you think about the relation between 5 and 6?
+        type: multiple_choice
+        other: yes
         answers:
-         - I don't
+         - I don't know
+         - Perl 6 is a replacament for Perl 5
+         - Perl 6 is a separate language, Perl 5 will live along Perl 6 for many more years
          - Perl 5 was hurt by Perl 6
          - Perl 5 benefits from Perl 6
          - The two are mostly independent
       - question: In what environment do you use Perl 6?
+        type: multiple_choice
+        other: yes
         answers:
           - I don't use at all
           - Just playing with it
           - Use it for some real world stuff for myself
-          - Use it for some real world stuff in-house
-          - Use it in a customer/public facing application
+          - Use it for some real world stuff in-house in work
+          - Use it in a public facing application
+          - Use it in a customer facing application
       - question: The most important feature(s) I am missing before I can start using Rakudo:
         type: free_text
       - question: Any comment you might have regarding Perl 6?
         type: free_text
-  - title: Environment
+  - title: Environment, tools
     questions:
       - question: Operating systems for development
         type: multiple_choice
@@ -111,11 +120,23 @@ pages:
         answers: <include/list_of_oses.txt>
       - question: Which version control systems are you using?
         type: multiple_choice
+        other: yes
         answers:
-          - CSV
+          - CVS
           - Subversion
           - Git
-          - Mercurius
+          - Mercurial
+          - Clear Case
+          - Visual Source Safe
+          - Perforce
+          - Team Foundation Server
+          - GNUarch
+          - Darcs 
+          - DCVS
+          - SVK
+          - Bazaar
+          - Fossil
+          - BitKeeper
       - question: Which RDBM are you using?
         other: yes
         answers:
@@ -123,25 +144,34 @@ pages:
           - PostgreSQL
           - Oracle
           - SQL Server (MS)
-          - SQLLite
+          - SQLite
+          - Firebird
       - question: Which NoSQL are you using?
         type: multiple_choice
         other: yes
         answers:
           - MongoDB
-      - question: If you are using Windows, which Perl distribution do you use the most?
+          - CouchDB
+      - question: What is your primary editor/IDE?
         other: yes
-        answers: 
-          - ActivePerl of ActiveState
-          - StrawberryPerl
-          - Cygwin
-  - title: Other
+        answers: <include/list_of_editors.txt>
+      - question: What is your secondary editor/IDE?
+        other: yes
+        answers: <include/list_of_editors.yml>
+  - title: Perl practices
     questions:
       - question: What do you use to create object oriented code in Perl?
+        type: multiple_choice
+        other: yes
         answers:
           - I don't write OOP
           - Moose
+          - Mouse
+          - Moo
+          - Class::Accessor
+          - Class::XSAccessor
           - Calling bless on plain hash-refs
+  - title: Web development
       - question: Which web development framework do you use?
         type: multiple_choice
         other: yes
@@ -165,34 +195,24 @@ pages:
           - XML/RPC
           - traditional url=action
           - Ajax
-      - question: Which web server are you using?
+      - question: Which web server do you use?
         type: multiple_choice
         other: yes
         answers:
           - Apache + CGI
           - Apache + mod_perl
           - Apache + FastCGI
+          - IIS
+          - nginx
+          - GWS
+          - lighttpd
       - question: Do you write web applications ... 
         type: multiple_choice
         other: yes
         answers:
           - for fun
-          - release open source
+          - and release them open source
           - at work
-      - question: Which concurrent execution tool do you use?
-        type: multiple_choice
-        other: yes
-        answers:
-          - POE
-          - threads
-          - fork
-          - AnyEvent
-      - question: What is your primary editor/IDE?
-        other: yes
-        answers: <include/list_of_editors.txt>
-      - question: What is your secondary editor/IDE?
-        other: yes
-        answers: <include/list_of_editors.yml>
   - title: Community Involvement
     questions:
       - question: Number of Perl Monger list subscribed to?
@@ -208,8 +228,9 @@ pages:
           - http://perlmonks.org/
           - http://cpanforum.com/
           - http://stackoverflow.com/tags/perl/
-      - question: Non-Perl related technical resources (TODO: list of news site)
+      - question: Non-Perl related technical resources
         type: multiple_choice
+        other: yes
         answers:
           - Mashable http://mashable.com/
           - TechRepublic http://techrepublic.com.com/
@@ -224,25 +245,51 @@ pages:
           - The H http://www.h-online.com/
           - Linux Today http://www.linuxtoday.com/
           - Datamation http://itmanagement.earthweb.com/
-      - question: Where are you located in the Perl world?
+      - question: Where are you in the Perl ecosystem?
         type: multiple_choice
+        other: yes
         answers:
-          - I am Larry Wall
-          - p5porter
+          - participate in the development of perl 5 (code, tests, docs) (perl5porter)
+          - participate in the development of core or dual life perl 5 modules (perl5porter)
           - CPAN developer
           - Write open source code but not on CPAN
-          - ...
+          - Participate on mailing lists, web forumts
       - question: What other question would you ask in the next survey?
         type: Free text
   - title: Perl Jobs
     questions:
       - question: As an employee, how difficult is it to find a job?
+        type: multiple_choice
+        other: yes
         answers:
-          - There are (almost) no Perl jobs in my travel distance.
-          - I could find easily elsewhere but I don't want to relocate.
-          - The salary that is offered is too low compare to other offers.
+          - There are (almost) no Perl jobs in travel distance from where I live
+          - I could find easily elsewhere but I don't want to relocate
+          - The salary that is offered is too low compared to other (non Perl) offers
+          - I am employed and don't want to change
+          - I can find a Perl job easily
       - question: As an employer, how difficult is it to find a perl developer?
-      - question: Something about jobs.perl.org
+        type: multiple_choice
+        other: yes
+        answers:
+          - It is a lot more difficult than finding a Java programmer
+          - We can find good programmers and train to write Perl
+          - We are considering moving away from Perl as we don't find programmers
+      - question: As an employee what do you think about jobs.perl.org?
+        type: multiple_choice
+        other: yes
+        answers:
+          - I found my last job via jobs.perl.org
+          - I found several jobs via jobs.perl.org
+          - I don't look elsewhere, if it is not posted on jobs.perl.org it can't be good
+          - There are other places where more Perl jobs can be found
+          - I never search in jobs.perl.org as no jobs in my country are posted there
+      - question: As an employer what do you think about jobs.perl.org?
+        type: multiple_choice
+        other: yes
+        answers:
+          - We found one or more employees via that site
+          - We paid to be in the featured jobs and that paid off well
+          - We don't use it because it is only in English
   - title: Demographic
     questions:
       - question: Gender
@@ -269,13 +316,15 @@ pages:
       - question: Highest qualification
         type: single_choice
         answers:
-          - TODO clarify these items, e.g. what is School?
-          - School
+          - Elementary or Priarmy school
+          - Secondary or highschool
           - Technical Collage
           - Bachelors
           - Masters
           - Phd
-      - question: Collage major (higher education major) (is this really interesting?)
+      - question: Collage major (higher education major)
+        type: single_choice
+        other: yes
         answers:
          - Computing
          - Engineering
@@ -294,6 +343,8 @@ pages:
           - 90,000-120,000
           - 120,000+
       - question: Industry sector
+        type: single_choice
+        other: yes
         answers: <include/industry_sectors.txt>
       - question: Job title (the highest position you hold in your workplace)
         type: single_choice
@@ -307,8 +358,7 @@ pages:
           - CM Engineer
           - VP RnD
           - Team leader
-          - CTO
-          - CEO
+          - CxO
           - Owner
           - System architect
           - Development Manager
@@ -321,14 +371,22 @@ pages:
          - A little
          - Quite a bit
          - A lot
-      - question: Would you thing attending a Perl course would improve your knowledge?
+      - question: Do you think attending a Perl course would improve your knowledge?
+        type: single_choice
         answers:
           - Not at all
           - A little bit
           - Qite a bit
           - A lot
       - question: Were you formally taught any other dynamic languages?
-        answers: TODO
+        answers:
+        type: single_choice
+        answers:
+         - None
+         - Almost none
+         - A little
+         - Quite a bit
+         - A lot
       - question: Source of your perl knowledge?
         type: multiple_choice
         answers:
@@ -374,6 +432,12 @@ pages:
           - < 1/3
           - ~ 0
       - question: Time spent programming Perl
+        type: single_choice
+        answers:
+          - none
+          - 1 hour / day
+          - 2-3 hours / day
+          - 4+ hours / day
       - question: Spare time spent programming 
         type: single_choice
         answers:
@@ -399,14 +463,32 @@ pages:
           - Perlsphere http://perlsphere.net/
           - Planet Parrot http://planet.parrotcode.org/
           - Ironman: http://ironman.enlightenedperl.org/
-      - question: The biggest issues the Perl ecosystem faces
+  - title: Perl Ecosystem
+      - question: What are the biggest issues the Perl ecosystem faces
+        type: free_text
       - question: Would you be interested in getting paid to work on open source Perl code? 
-      - question: What is your major issues with the Perl ecosystem?
-      - question: What is your employers (clients)  major issues with the Perl ecosystem?
+        type: single_choice
+        other: yes 
+        answers:
+          - no, I would like to do it for fun only
+          - I'd like if my regular work allowed some time to work on open source
+          - I am already paid to work open source code
+          - I don't care about open source, I just want to do my job and go home
       - question: What would you think if some people were paid to work on the perl core?
+        type: single_choice
+        other: yes
+        answers:
+          - No opinion
+          - I think it will ruin the open Perl world if some people get paid
+          - There are already grants (e.g. Dave Mitchel, regular TPF grants) os it is OK
+          - It would be good to have more and bigger grants
       - question: About the TPF grants: Do you think there should be more grant requests?
-      - question: How much money would you be ready to contribute for devloping the Perl ecosystem  (USD / month)
-        comment: (a mixture of developing and promoting perl, CPAN packages, open source perl applications)
+        type: single_choice
+        answers:
+          - I think the TPF should stop giving out grants
+          - The grants are just perfect
+          - The size of the grants should be increased
+      - question: How much money would you be ready to contribute for devloping the Perl ecosystem  (a mixture of developing and promoting perl, CPAN packages, open source perl applications) (USD / month) 
         answers:
           - 0
           - 1-4
@@ -415,6 +497,8 @@ pages:
           - 20-29
           - 30-49
           - 50-
+  - title: Me and the Perl world
+    questions:
       - question: Number of CPAN modules you maintain?
         type: single_choice
         answers:
@@ -443,7 +527,7 @@ pages:
           - Once
           - Ocassionally
           - Frequently
-      - question: How often have you provided code to fix a bug in the perl interpreter?
+      - TODO: question: How often have you provided code to fix a bug in the perl interpreter?
       - question: How often have you provided code to add a feature to the perl interpreter?
       - question: How often have you provided a bug report for a CPAN module?
       - question: How often have you provided code to fix a bug in a CPAN module?
@@ -476,4 +560,5 @@ pages:
         answers: <include/list_of_languages.txt>
       - question: Size of the company your work for
       - question: Number of people in the tech department
+      - question: self employed?
   

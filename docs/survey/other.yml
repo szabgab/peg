@@ -1,0 +1,47 @@
+---
+title: Perl Ecosystem Survey
+pages:
+  - title: Perl 5
+    questions:
+      - question: MTA:
+        answers:
+          - exim
+          - Postfix
+          - qmail
+          - qpsmtpd
+          - sendmail
+      - question: distributed application cache:
+        type: multiple_choice
+        other: yes
+        answers:
+          - EHcache
+          - memcached
+          - Velocity
+      - question: distributed storage:
+        type: multiple_choice
+        other: yes
+        answers:
+          - App Engine/BigTable
+          - Hadoop
+          - MogileFS
+          - S3
+      - question: Which concurrent execution tool do you use?
+        type: multiple_choice
+        other: yes
+        answers:
+          - POE
+          - threads
+          - fork
+          - AnyEvent
+      - question: job queues
+        answers:
+          - Gearman
+          - POE
+          - TheSchwartz
+      - question: reverse proxy/load balancer:
+        type: multiple_choice
+        other: yes
+        answers:
+          - nginx
+          - Perlbal
+
