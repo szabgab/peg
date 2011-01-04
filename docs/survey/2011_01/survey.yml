@@ -81,7 +81,7 @@ pages:
         other: yes
         answers:
          - I don't know
-         - Perl 6 is a replacament for Perl 5
+         - Perl 6 is a replacement for Perl 5
          - Perl 6 is a separate language, Perl 5 will live along Perl 6 for many more years
          - Perl 5 was hurt by Perl 6
          - Perl 5 benefits from Perl 6
@@ -90,10 +90,10 @@ pages:
         type: multiple_choice
         other: yes
         answers:
-          - I don't use at all
+          - I don't use it at all
           - Just playing with it
           - Use it for some real world stuff for myself
-          - Use it for some real world stuff in-house in work
+          - Use it for some real world stuff in-house at work
           - Use it in a public facing application
           - Use it in a customer facing application
       - question: The most important feature(s) I am missing before I can start using Rakudo:
@@ -138,6 +138,7 @@ pages:
           - Fossil
           - BitKeeper
       - question: Which RDBM are you using?
+        type: multiple_choice
         other: yes
         answers:
           - MySQL
@@ -395,6 +396,7 @@ pages:
           - Peers
           - mailing list
           - IRC
+          - web forum
       - question: Years spent programming computers
         type: single_choice
         answers:
@@ -472,7 +474,7 @@ pages:
         answers:
           - no, I would like to do it for fun only
           - I'd like if my regular work allowed some time to work on open source
-          - I am already paid to work open source code
+          - I am already paid to work on open source code
           - I don't care about open source, I just want to do my job and go home
       - question: What would you think if some people were paid to work on the perl core?
         type: single_choice
@@ -480,7 +482,7 @@ pages:
         answers:
           - No opinion
           - I think it will ruin the open Perl world if some people get paid
-          - There are already grants (e.g. Dave Mitchel, regular TPF grants) os it is OK
+          - There are already grants (e.g. Dave Mitchel, regular TPF grants) so it is OK
           - It would be good to have more and bigger grants
       - question: About the TPF grants: Do you think there should be more grant requests?
         type: single_choice
