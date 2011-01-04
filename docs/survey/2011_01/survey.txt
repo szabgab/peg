@@ -25,3 +25,16 @@ How people participate in and perceive open source software
 
 How people who are not using perl perceive it?
 
+*) Ask questions on topics that were left out from the TPF survey
+   including Perl 6 related questions
+*) Try to measure the difference in coding standards and practices
+    between open source coding and corporate coding
+*) Try to find out what things people who are not in the active Perl
+    Community miss from the Perl ecosystem
+*) Try to find out what would bring more people to contribute to the
+   Perl Community (code, tests, docs, design etc).
+*) Establish a base-line for us in the above metrics
+*) See if there were any changes since the TPF survey in the metrics
+   that are common.
+
+
