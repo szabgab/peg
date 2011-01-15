@@ -1,0 +1,81 @@
+---
+title: Perl Ecosystem Survey
+pages:
+  - title: Perl 5
+    questions:
+      - question: What are the biggest problems of the Perl Ecosystem?
+        answers:
+          - There are not enough developers with 1-2 years experience
+          - There are not enough developers with 3-4 years experience
+          - There are not enough developers with 5- years experience
+          - The standard Perl distribution does not include Moose
+          - Perl - does not have a built in object system like Moose
+          - Subroutines don't have formal signature for passing and checking parameters
+      - question: What best describes your organizations' policy towards the use of open source software?
+        answers:
+          - Does not allow the use of any open source software
+          - Uses open source software, but does not interact with open source project communities in any way
+          - Uses open source software and contributes back (through bug reports, code, resources) to at least one open source project community to help improve the quality of the projects we consume
+          - Contributes significant development resources (contributors, committers and/or maintainers, project leaders) to at least one open source project community in order to help influence the evolution of the projects we consume
+          - Has a business model that relies on open source software for its success
+          - Individual, not affiliated with an organization
+          - Don't know
+      - question: What is the policy in the company regarding the use of CPAN?
+        answers:
+           - Not allowed at all
+           - Only modules that are supplied by the vendor (e.g. Linux distribution) we use
+           - Every module need approval of management
+           - Freely as I need it
+           - Don't know
+      - question: What is your open source contribution?
+        answer:
+          - The company allocates time to work on open source projects
+          - The company allows to release some of my work related code/documentation/etc. as open source
+          - The company releases all (or almost all) my code/documentation/etc. as open source
+          - In my spare time I contribute to the open source community
+          - On company time I write open source code/documentation/etc even though I don't have time allocated.
+          - None
+      - question: What coding practices / stadards do you have in the company where you work?
+          - We have formal coding standards for Perl 
+          - We use Perl::Critic to regularily check our code base
+          - We have a style standard for code layout
+          - We use Perl Tidy (or some other tool) to ensure code layout
+          - We write lots of unit and integration tests
+          - We regularily run our tests after commits to the version control system
+          - We always use strict
+          - We always use warnings
+          - We use autodie
+          - We use Moose
+          - I don't know
+      - question: Age group
+        type: single_choice
+      - question: Gender
+        type: single_choice
+        answers:
+          - under 20
+      - question: How many years have you been programming?
+        answers:
+          - less than 2
+          - 2-5
+          - 5-10
+          - 10-15
+          - 15-20
+          - more than 20
+      - question: Country of residence?
+        type: single_choice
+        answers:
+      - question: Where did you hear about the survey?
+        type: multiple_choice
+        other: yes
+        answers:
+          - LinkedIn
+          - Blog of Gabor
+          - Blog of Renee
+          - Ironman
+          - TODO list other planets
+          - Twitter
+          - IRC
+          - Perl Monger mailiing list
+          - E-mail from someone in my company
+          - E-mail from someone outside my company
+          - Perl Ecosystem Group mailing list
