@@ -154,11 +154,20 @@ pages:
           - MongoDB
           - CouchDB
       - question: What is your primary editor/IDE?
+        type: single_choice
         other: yes
         answers: <include/list_of_editors.txt>
       - question: What is your secondary editor/IDE?
+        type: single_choice
         other: yes
         answers: <include/list_of_editors.yml>
+      - question: Which software development methodology do you use?
+        type: multiple_choice
+        other: yes
+        answers:
+          - Agile
+          - Test Driven Development
+          - Scrum
   - title: Perl practices
     questions:
       - question: What do you use to create object oriented code in Perl?
@@ -172,6 +181,13 @@ pages:
           - Class::Accessor
           - Class::XSAccessor
           - Calling bless on plain hash-refs
+      - question: How much time do you invest in writing tests using Test::* ?
+        answers:
+          - none
+          - 0-5% of the development time
+          - 5-10%
+          - 10-20%
+          - 20-30%
   - title: Web development
       - question: Which web development framework do you use?
         type: multiple_choice
@@ -207,6 +223,7 @@ pages:
           - nginx
           - GWS
           - lighttpd
+          - Starman
       - question: Do you write web applications ... 
         type: multiple_choice
         other: yes
