@@ -1,4 +1,6 @@
-
+<% META title       = 'Membership' %>
+<% META subtitle    = 'Membership' %>
+<% META description = 'Information about the membership levels of the Perl Ecosystem Group' %>
 
 <div id="getting-started">
 

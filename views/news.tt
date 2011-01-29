@@ -1,3 +1,6 @@
+<% META title       = 'News' %>
+<% META subtitle    = 'News' %>
+<% META description = 'News about the Perl Ecosystem Group' %>
 
 <div id="getting-started">
 
