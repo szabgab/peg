@@ -1,10 +1,11 @@
 use Test::More;
 use strict;
 use warnings;
+use Test::NoWarnings;
 
 my @pages = qw(/ /rss);
 
-plan tests => 2 * @pages;
+plan tests => 1 + 2 * @pages;
 
 # the order is important
 use PEG;

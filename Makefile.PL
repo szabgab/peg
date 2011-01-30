@@ -18,6 +18,7 @@ WriteMakefile(
 	'Template'   => 0,
     	'XML::RSS'   => 0,
     	'Encode'     => 0,
+    	'Test::NoWarnings' => 0,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'PEG-*' },
