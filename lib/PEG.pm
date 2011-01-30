@@ -13,23 +13,32 @@ sub _read_news {
 	return $news;
 }
 
-my $upcoming_events = YAML::LoadFile(
-    path( config->{appdir}, 'data', 'events.yml' )
-);
-my $earlier_events  = YAML::LoadFile(
-    path( config->{appdir}, 'data', 'earlier_events.yml' )
-);
 
 # this will be refactored out into the templates later
 # will use auto pages for this
-my %content = (
-    earlier_events => { events => $earlier_events  },
-    events         => { events => $upcoming_events },
-    news           => { news   => _read_news       },
-);
+my %content;
+
+sub _content {
+    if (not %content) {
+        my $earlier_events  = YAML::LoadFile(
+            path( config->{appdir}, 'data', 'earlier_events.yml' )
+        );
+        my $upcoming_events = YAML::LoadFile(
+            path( config->{appdir}, 'data', 'events.yml' )
+        );
+
+        %content = (
+            earlier_events => { events => $earlier_events  },
+            events         => { events => $upcoming_events },
+            news           => { news   => _read_news       },
+        );
+    }
+    
+    return \%content;
+}
 
 get qr{^ / (?: index \. html )? $}x => sub {
-    template 'index' => $content{'index'};
+    template 'index' => _content->{'index'};
 };
 
 my @pages = qw/
@@ -45,7 +54,7 @@ get qr{^ / (\w+) $ }x => sub {
     grep { $page eq $_ } @pages or return pass;
 
     # render it
-    template $page => $content{$page};
+    template $page => _content->{$page};
 };
 
 get '/rss' => sub {
