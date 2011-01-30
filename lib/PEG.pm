@@ -4,9 +4,13 @@ use Encode qw(decode);
 use XML::RSS;
 
 our $VERSION = '0.1';
+my $news;
 
 sub _read_news {
-    YAML::LoadFile(path config->{appdir}, 'data', 'news.yml');
+	if (not $news) {
+		$news = YAML::LoadFile(path config->{appdir}, 'data', 'news.yml');
+	}
+	return $news;
 }
 
 my $upcoming_events = YAML::LoadFile(
@@ -15,14 +19,13 @@ my $upcoming_events = YAML::LoadFile(
 my $earlier_events  = YAML::LoadFile(
     path( config->{appdir}, 'data', 'earlier_events.yml' )
 );
-my $news            = _read_news();
 
 # this will be refactored out into the templates later
 # will use auto pages for this
 my %content = (
     earlier_events => { events => $earlier_events  },
     events         => { events => $upcoming_events },
-    news           => { news   => $news            },
+    news           => { news   => _read_news       },
 );
 
 get qr{^ / (?: index \. html )? $}x => sub {
@@ -67,9 +70,7 @@ get '/rss' => sub {
         }
     );
 
-    my $news = _read_news();
-
-    foreach my $n (@$news) {
+    foreach my $n (@{ _read_news() }) {
         my $text = $n->{text};
         $text =~ s{"/}{"$url/}g;
 
