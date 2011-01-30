@@ -3,7 +3,11 @@ use strict;
 use warnings;
 use Test::NoWarnings;
 
-my @pages = qw(/ /rss);
+my @pages = qw(
+	/ /rss /about /what /who /why 
+	/events /earlier_events /news 
+	/members /membership /sponsors 
+	/benefits /contact /about);
 
 plan tests => 1 + 2 * @pages;
 
