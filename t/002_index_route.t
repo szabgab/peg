@@ -1,10 +1,16 @@
-use Test::More tests => 2;
+use Test::More;
 use strict;
 use warnings;
+
+my @pages = qw(/ /rss);
+
+plan tests => 2 * @pages;
 
 # the order is important
 use PEG;
 use Dancer::Test;
 
-route_exists [GET => '/'], 'a route handler is defined for /';
-response_status_is ['GET' => '/'], 200, 'response status is 200 for /';
+foreach my $p (@pages) {
+	route_exists [GET => $p], "a route handler is defined for $p";
+	response_status_is ['GET' => $p], 200, "response status is 200 for $p";
+}
