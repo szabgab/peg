@@ -14,8 +14,6 @@ sub _read_news {
 }
 
 
-# this will be refactored out into the templates later
-# will use auto pages for this
 my %content;
 
 sub _content {
