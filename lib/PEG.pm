@@ -39,7 +39,7 @@ get qr{^ / (\w+) $ }x => sub {
     my ($page) = splat;
 
     # we have the page or we pass up on it
-    grep { $page eq $_ } @pages or pass;
+    grep { $page eq $_ } @pages or return pass;
 
     # render it
     template $page => $content{$page};
