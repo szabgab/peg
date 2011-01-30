@@ -10,6 +10,8 @@ plan tests => 2 * @pages;
 use PEG;
 use Dancer::Test;
 
+Dancer::set("log" => "warning");
+
 foreach my $p (@pages) {
 	route_exists [GET => $p], "a route handler is defined for $p";
 	response_status_is ['GET' => $p], 200, "response status is 200 for $p";
