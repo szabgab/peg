@@ -42,6 +42,7 @@ get qr{^ / (?: index \. html )? $}x => sub {
 my @pages = qw/
     what why who sponsors members events contact
     membership benefits about news earlier_events
+    survey
 /;
 
 get qr{^ / (\w+) $ }x => sub {

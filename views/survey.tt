@@ -1,0 +1,16 @@
+<% META title       = 'Survey' %>
+<% META subtitle    = 'Survey' %>
+<% META description = 'Survey of the Perl Ecosystem Group' %>
+
+<script type="text/javascript" src="/js/survey_2011_02.json"></script>
+<script type="text/javascript" src="/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="/js/survey.js"></script>
+
+<div id="getting-started">
+
+<hr>
+<div id="survey"></div>
+<hr>
+<div id="now"></div>
+
+</div>
