@@ -36,6 +36,7 @@ pages:
           - On company time I write open source code/documentation/etc even though I don't have time allocated.
           - None
       - question: What coding practices / stadards do you have in the company where you work?
+        answer:
           - We have formal coding standards for Perl 
           - We use Perl::Critic to regularily check our code base
           - We have a style standard for code layout
