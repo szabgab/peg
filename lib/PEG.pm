@@ -43,17 +43,11 @@ my @pages = qw/
     what why who sponsors members events contact
     membership benefits about news earlier_events
 /;
-
-get qr{^ / (\w+) $ }x => sub {
-    # get page
-    my ($page) = splat;
-
-    # we have the page or we pass up on it
-    grep { $page eq $_ } @pages or return pass;
-
-    # render it
-    template $page => _content->{$page};
-};
+foreach my $page (@pages) {
+    get "/$page" => sub {
+        template $page => _content->{$page};
+    };
+}
 
 get '/rss' => sub {
     my $rss  = XML::RSS->new( version => '1.0' );
