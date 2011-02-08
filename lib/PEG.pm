@@ -44,6 +44,7 @@ my @pages = qw{
     membership benefits about news earlier_events mailing_lists
     news/grants-to-invite-speakers-to-non-perl-events
     news/announcement-and-public-discussion-lists
+    events/fosdem_2011
 };
 
 get qr{^ / ([\w/-]+) $ }x => sub {
