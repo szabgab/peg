@@ -39,12 +39,14 @@ get qr{^ / (?: index \. html )? $}x => sub {
     template 'index' => _content->{'index'};
 };
 
-my @pages = qw/
+my @pages = qw{
     what why who sponsors members events contact
     membership benefits about news earlier_events mailing_lists
-/;
+    news/grants-to-invite-speakers-to-non-perl-events
+    news/announcement-and-public-discussion-lists
+};
 
-get qr{^ / (\w+) $ }x => sub {
+get qr{^ / ([\w/-]+) $ }x => sub {
     # get page
     my ($page) = splat;
 

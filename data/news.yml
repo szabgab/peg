@@ -1,4 +1,12 @@
 ---
+  - date: 2011.02.08
+    text: 'The Perl Ecosystem Group announces supporting the Perl Mongers to promote Perl by offering <a href="/news/grants-to-invite-speakers-to-non-perl-events">grants to invite speakers to (non-Perl) events</a>'
+    title: Grants to invite speakers to (non-Perl) events
+    author: Gabor Szabo
+  - date: 2011.02.02
+    text: 'The Perl Ecosystem Group announces the creation of a newsletter and a public <a href="/news/announcement-and-public-discussion-lists">public discussion list</a>'
+    title: Announcement and public discussion lists
+    author: Gabor Szabo
   - date: 2010.12.03
     text: '<a href="http://www.123people.com/">123People</a> has become the second Bronze sponsor of the Perl Ecosystem Group'
     title: 123People becomes a member of the Perl Ecosystem Group
