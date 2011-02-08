@@ -1,0 +1,20 @@
+<% META title       = 'Plat_Forms 2011' %>
+<% META subtitle    = 'Plat_Forms 2011' %>
+<% META description = '' %>
+
+<div id="getting-started">
+
+<p>
+<a href="http://www.plat-forms.org/">Plat_Forms</a> is an academic research/competition to build a specific application in 48 hours.
+There were 3 Perl based teams. One of them organized by the <b>Perl Ecosystem Group</b>. The event took place 18-19 January 2011 in Nurnberg, Germany.
+</p>
+
+<h2>Reports</h2>
+<ul>
+<li><a href="http://www.shadowcat.co.uk/blog/matt-s-trout/plat-forms-redux/">Plat-forms Redux</a> by Matt Trout of the Shadowcat team</li>
+<li><a href="http://www.plat-forms.org/perl-ecosystem-group-looking-back-week-later">looking back a week later</a> by Paul Johnson - www.pjcj.net of the
+team called "Perl Ecosystem Group"</li>
+</ul>
+
+</div>
+
