@@ -95,21 +95,27 @@ function create_question(pid, qid, q) {
 			text += sprintf('<select id="%s">', [pid + "_" + qid]);
 			text += '<option></option>';
 			for (a in q["answers"]) {
-				text +=  sprintf('<option value="%s">%s</option>', [pid + "_" + qid + "_" + a, q["answers"][a]]);
+				text +=  sprintf('<option value="%s">%s</option>', 
+					[pid + "_" + qid + "_" + a, q["answers"][a]]);
 			}
 			if (q["other"] == "yes") {
-				text +=  sprintf('<option value="%s">%s</option>', [pid + "_" + qid + "_" + a, "Other"]);
+				text +=  sprintf('<option value="%s">%s</option>', 
+					[pid + "_" + qid + "_" + a, "Other"]);
 			}
 			text += "</select>";
 
 			//alert(text);
 		} else if (q["style"] == "default") {
+			text += '<ul>';
 			for (a in q["answers"]) {
-				text += q["answers"][a] + sprintf('<input type="checkbox" name="%s" value="%s" />', [pid + "_" + qid, pid + "_" + qid + "_" + a]);
+				text += sprintf('<li><input type="checkbox" name="%s" value="%s" />%s</li>', 
+					[pid + "_" + qid, pid + "_" + qid + "_" + a, q["answers"][a]]);
 			}
 			if (q["other"] == "yes") {
-				text += "Other" + sprintf('<input type="checkbox" name="%s" value="%s" />', [pid + "_" + qid, pid + "_" + qid + "_" + a]); 
+				text += sprintf('<li>%s<input type="checkbox" name="%s" value="%s" />', 
+					[pid + "_" + qid, pid + "_" + qid + "_" + a, "Other"]); 
 			}
+			text += '</ul>';
 		} else {
 			throw(sprintf("Invalid style '%s'", [ q["style"] ]));
 		}
