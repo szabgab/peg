@@ -5,6 +5,7 @@
 <script type="text/javascript" src="/js/survey_2011_02.json"></script>
 <script type="text/javascript" src="/js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="/js/survey.js"></script>
+<link rel="stylesheet" href="/css/survey.css" />
 
 <div id="getting-started">
 

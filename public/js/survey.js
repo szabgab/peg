@@ -77,14 +77,16 @@ function create_question(pid, qid, q) {
 	var text = "";
 	text += "<h2>" + q["question"] + "</h2>";
 	if (q["type"] == "single_choice") {
+		text += '<ul>';
 		for (a in q["answers"]) {
-			text += q["answers"][a] + sprintf('<input type="radio" name="%s" value="%s" />', [pid + "_" + qid, pid + "_" + qid + "_" + a]);
+			text += sprintf('<li><input type="radio" name="%s" value="%s" />%s</li>', [pid + "_" + qid, pid + "_" + qid + "_" + a, q["answers"][a]]);
 		}
 		if (q["other"] == "yes") {
-			text += "Other" + sprintf('<input type="radio" name="%s" value="%s" />', [pid + "_" + qid, pid + "_" + qid + "_" + a]); 
+			text += sprintf('<li><input type="radio" name="%s" value="%s" />%s', [pid + "_" + qid, pid + "_" + qid + "_" + a, "Other"]); 
 			// TODO this textbox should only be enabled (or visible) if the user selects "Other"
-			text += sprintf('<input name="%s" />', [pid + "_" + qid + "_" + a]);
+			text += sprintf('<input name="%s" /></li>', [pid + "_" + qid + "_" + a]);
 		}
+		text += '</ul>';
 	} else if (q["type"] == "multiple_choice") {
 		if (!q["style"]) {
 			q["style"] = "default";
