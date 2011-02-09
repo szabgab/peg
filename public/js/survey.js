@@ -84,7 +84,8 @@ function create_question(pid, qid, q) {
 		if (q["other"] == "yes") {
 			text += sprintf('<li><input type="radio" name="%s" value="%s" />%s', [pid + "_" + qid, pid + "_" + qid + "_" + a, "Other"]); 
 			// TODO this textbox should only be enabled (or visible) if the user selects "Other"
-			text += sprintf('<input name="%s" /></li>', [pid + "_" + qid + "_" + a]);
+			text += sprintf(' <input name="%s" size="40" />', [pid + "_" + qid + "_" + a]);
+			text += '</li>';
 		}
 		text += '</ul>';
 	} else if (q["type"] == "multiple_choice") {
@@ -103,7 +104,10 @@ function create_question(pid, qid, q) {
 					[pid + "_" + qid + "_" + a, "Other"]);
 			}
 			text += "</select>";
-
+			if (q["other"] == "yes") {
+				text += sprintf(' <input name="%s" size="40" />', [pid + "_" + qid + "_other"]);
+			}
+			
 			//alert(text);
 		} else if (q["style"] == "default") {
 			text += '<ul>';
@@ -112,19 +116,18 @@ function create_question(pid, qid, q) {
 					[pid + "_" + qid, pid + "_" + qid + "_" + a, q["answers"][a]]);
 			}
 			if (q["other"] == "yes") {
-				text += sprintf('<li>%s<input type="checkbox" name="%s" value="%s" />', 
+				text += sprintf('<li><input type="checkbox" name="%s" value="%s" />%s', 
 					[pid + "_" + qid, pid + "_" + qid + "_" + a, "Other"]); 
+				text += sprintf(' <input name="%s" size="40" />', [pid + "_" + qid + "_other"]);
+				text += "</li>";
 			}
 			text += '</ul>';
 		} else {
 			throw(sprintf("Invalid style '%s'", [ q["style"] ]));
 		}
 
-		// TODO this textbox should only be enabled (or visible) if the user selects "Other"
-		if (q["other"] == "yes") {
-			 // TODO what if one of the values is other?
-			text += sprintf('<input name="%s" />', [pid + "_" + qid + "_other"]);
-		}
+		// TODO the other textbox should only be enabled (or visible) if the user selects "Other"
+		// TODO what if one of the values is other?
 
 	} else {
 		throw(sprintf("Invalid question type '%s' in question '%s'", [q["type"], q["question"]]));

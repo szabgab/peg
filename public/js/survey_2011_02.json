@@ -1,12 +1,13 @@
 var survey_data = {
-   "title" : "Perl Ecosystem Survey",
+   "title" : "Perl Ecosystem Survey 2011 February",
    "pages" : [
       {
-         "title" : "Perl 5",
+         "title" : "Corporate usage of Perl",
          "questions" : [
             {
                "question" : "What are the biggest problems of the Perl Ecosystem?",
                "type" : "multiple_choice",
+               "other" : "yes",
                "answers" : [
                   "There are not enough developers with 1-2 years experience",
                   "There are not enough developers with 3-4 years experience",
@@ -19,6 +20,7 @@ var survey_data = {
             {
                "question" : "What best describes your organizations' policy towards the use of open source software?",
                "type" : "multiple_choice",
+               "other" : "yes",
                "answers" : [
                   "Does not allow the use of any open source software",
                   "Uses open source software, but does not interact with open source project communities in any way",
@@ -32,10 +34,11 @@ var survey_data = {
             {
                "question" : "What is the policy in the company regarding the use of CPAN?",
                "type" : "single_choice",
+               "other" : "yes",
                "answers" : [
                   "Not allowed at all",
                   "Only modules that are supplied by the vendor (e.g. Linux distribution) we use",
-                  "Every module need approval of management",
+                  "Every module needs approval of management",
                   "Freely as I need it",
                   "Don't know"
                ]
@@ -71,7 +74,15 @@ var survey_data = {
             },
             {
                "question" : "Age group",
-               "type" : "single_choice"
+               "type" : "single_choice",
+               "answers" : [
+                  "Under 20",
+                  "20-24",
+                  "25-29",
+                  "30-39",
+                  "40-49",
+                  "50+"
+               ]
             },
             {
                "question" : "Gender",
@@ -97,7 +108,10 @@ var survey_data = {
             {
                "question" : "Country of residence?",
                "type" : "single_choice",
-               "answers" : null
+               "style" : "selection",
+               "answers" : [
+                  "include/list_of_countries.txt"
+               ]
             },
             {
                "question" : "Where did you hear about the survey?",
@@ -107,11 +121,12 @@ var survey_data = {
                   "LinkedIn",
                   "Blog of Gabor",
                   "Blog of Renee",
-                  "Ironman",
-                  "TODO list other planets",
+                  "Ironman Perl Planet",
+                  "Planet Perl",
+                  "Perlsphere",
                   "Twitter",
                   "IRC",
-                  "Perl Monger mailiing list",
+                  "Perl Monger mailing list",
                   "E-mail from someone in my company",
                   "E-mail from someone outside my company",
                   "Perl Ecosystem Group mailing list"

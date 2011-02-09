@@ -309,25 +309,6 @@ pages:
           - We paid to be in the featured jobs and that paid off well
           - We don't use it because it is only in English
   - title: Demographic
-    questions:
-      - question: Gender
-        type: single_choice
-        answers:
-          - Male
-          - Female
-          - Other (does not want to say)
-      - question: Age group
-        type: single_choice
-        answers:
-          - Under 20
-          - 20-24
-          - 25-29
-          - 30-39
-          - 40-49
-          - 50+
-      - question: Country of residence
-        type: single_choice
-        answers: <include/list_of_countries.txt>
       - question: Country of origin (birth)
         type: single_choice
         answers: <include/list_of_countries.txt>
