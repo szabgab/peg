@@ -39,22 +39,21 @@ get qr{^ / (?: index \. html )? $}x => sub {
     template 'index' => _content->{'index'};
 };
 
-my @pages = qw/
+my @pages = qw{
     what why who sponsors members events contact
-    membership benefits about news earlier_events
+    membership benefits about news earlier_events mailing_lists
+    news/grants-to-invite-speakers-to-non-perl-events
+    news/announcement-and-public-discussion-lists
+    events/fosdem_2011
+    events/plat_forms_2011
     survey
-/;
-
-get qr{^ / (\w+) $ }x => sub {
-    # get page
-    my ($page) = splat;
-
-    # we have the page or we pass up on it
-    grep { $page eq $_ } @pages or return pass;
-
-    # render it
-    template $page => _content->{$page};
 };
+foreach my $page (@pages) {
+    get "/$page" => sub {
+        template $page => _content->{$page};
+    };
+}
+
 
 get '/rss' => sub {
     my $rss  = XML::RSS->new( version => '1.0' );

@@ -1,0 +1,30 @@
+<% META title       = 'FOSDEM 2011' %>
+<% META subtitle    = 'FOSDEM 2011' %>
+<% META description = '' %>
+
+<div id="getting-started">
+
+
+<p>
+<a href="http://www.fosdem.org/">FOSDEM</a> is probably the second largest open source event in the world and certainly the largest grass-root
+open source event with about 4-5000 visitors. It takes place every February in Brussels, Belgium.
+</p>
+
+<h2>Reports</h2>
+
+<p>
+These are the reports written by various Perl Mongers who attended FOSDEM 2011. 
+</p>
+
+<ul>
+<li><a href="http://nxadm.wordpress.com/2011/02/08/perl-at-fosdem-and-some-photographic-impressions/">Perl@FOSDEM and some photographic impressions</a> by Claudio Ramirez.</li>
+<li><a href="http://blogs.perl.org/users/alex_balhatchet/2011/02/introduction-to-wirting-readable-and-maintainable-perl.html">Introduction to wirting readable and maintainable Perl</a> by Alex Balhatchet</li>
+<li><a href="http://blogs.perl.org/users/sawyer_x/2011/02/dancer-fosdem-mini-hackathon.html">Dancer FOSDEM mini-hackathon</a> by Sawyer X</li>
+<li><a href="http://blogs.perl.org/users/sawyer_x/2011/02/dancer-fosdem-fuel-first-report.html">Dancer FOSDEM fuel, first report</a> by Sawyer X</li>
+<li><a href="http://blogs.perl.org/users/sawyer_x/2011/02/fosdem-second-report---the-talks.html">FOSDEM, second report - the talks!</a> by Sawyer X</li>
+<li><a href="http://www.sukria.net/fr/archives/2011/02/06/fosdem-2011-report/">FOSDEM 2011 report</a> by Alexis Sukrieh</li>
+</ul>
+
+
+</div>
+

@@ -1,0 +1,23 @@
+<% META title       = 'Mailing lists' %>
+<% META subtitle    = 'Mailing lists' %>
+<% META description = 'Public mailing lists of the Perl Ecosystem Group' %>
+
+<div id="getting-started">
+
+<p>
+In order to allow better communication and discussion of what the Perl Ecosystem Group does
+we have an announcement list and a public discussion list. You are welcome to join either of
+these lists.
+</p>
+
+<p>
+<a href="http://mail.perl-ecosystem.org/mailman/listinfo/peg-news">PEG News</a> is a newsletter
+where we are are sending out announcements of the Perl Ecosystem Group.
+</p>
+<p>
+<a href="http://mail.perl-ecosystem.org/mailman/listinfo/peg-public">PEG Public</a> is a mailing list
+that is open to the general public with a publicly readable archive. You are welcome to join it and 
+raise issues you think the Perl Ecosystem Group should address.
+</p>
+
+</div>

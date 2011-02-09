@@ -11,7 +11,14 @@ List of events where we have already participated even before the formation of t
 <div id="schedule">
 <ul>
 <% FOR e IN events %>
-<li><ul><li><% e.date %></li><li><% e.title %>, <% e.address %></li></ul></li>
+<li><ul><li><% e.date %></li>
+<li>
+<% IF e.details %>
+   <a href="/events/<% e.details %>"><% e.title %></a>
+<% ELSE %>
+   <% e.title %>
+<% END %>
+, <% e.address %></li></ul></li>
 <% END %>
 </ul>
 </div>
