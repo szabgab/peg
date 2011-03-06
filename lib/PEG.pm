@@ -161,13 +161,21 @@ sub _rss {
         my $text = $n->{text} || '';
         $text =~ s{"/}{"$base/}g;
 
+        my $link = $url . ( $n->{permalink} || '' );
+
         if ($name eq 'events') {
             $text = _event_text($n);
+            my $wiki;
+            if ($n->{wiki}) {
+                $n->{wiki} =~ s/ /_/g;
+                $wiki = "http://perlfoundation.org/perl5/$n->{wiki}";
+            }
+            $link = $wiki || $n->{url} || '';
         }
 
         $rss->add_item(
             title       => decode( 'utf-8', $n->{title} ),
-            link        => $url . ( $n->{permalink} || '' ),
+            link        => $link,
             description => decode( 'utf-8', $text ),
             dc          => {
                 creator  => $n->{author},
