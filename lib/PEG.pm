@@ -4,39 +4,40 @@ use Encode qw(decode);
 use XML::RSS;
 
 our $VERSION = '0.1';
-my $news;
 
-sub _read_news {
-	if (not $news) {
-		$news = YAML::LoadFile(path config->{appdir}, 'data', 'news.yml');
-	}
-	return $news;
+my %content = (
+    data => {},
+    src  => {
+        news   => 'news.yml',
+        events => 'events.yml',
+        earlier_events => 'earlier_events.yml',
+    },
+);
+
+sub _read_file {
+    my $name = shift;
+    my $file = path config->{appdir}, 'data', $content{src}{$name};
+    my $current_stamp = (stat($file))[9];
+
+    my $sub = $name eq 'news' ? 'news' : 'events';
+    if (not $content{data}{$name} or $content{stamp}{$name} < $current_stamp) {
+        $content{data}{$name}{$sub} = YAML::LoadFile($file);
+        $content{stamp}{$name} = $current_stamp;
+    }
+    return;
 }
 
 
-my %content;
-
 sub _content {
-    if (not %content) {
-        my $earlier_events  = YAML::LoadFile(
-            path( config->{appdir}, 'data', 'earlier_events.yml' )
-        );
-        my $upcoming_events = YAML::LoadFile(
-            path( config->{appdir}, 'data', 'events.yml' )
-        );
-
-        %content = (
-            earlier_events => { events => $earlier_events  },
-            events         => { events => $upcoming_events },
-            news           => { news   => _read_news       },
-        );
+    foreach my $src (keys %{$content{src}}) {
+        _read_file($src);
     }
-    
-    return \%content;
+
+    return $content{data};
 }
 
 get qr{^ / (?: index \. html )? $}x => sub {
-    template 'index' => _content->{'index'};
+    template 'index' => _content()->{'index'};
 };
 
 my @pages = qw{
@@ -90,7 +91,7 @@ sub _rss {
         }
     );
 
-    foreach my $n (@{ _read_news() }) {
+    foreach my $n (@{ _content()->{news}{news} }) {
         my $text = $n->{text};
         $text =~ s{"/}{"$url/}g;
 
@@ -109,7 +110,7 @@ sub _rss {
             },
         );
     }
-  
+
     return $rss->as_string;
 };
 
