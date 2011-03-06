@@ -2,6 +2,7 @@ package PEG;
 use Dancer ':syntax';
 use Encode qw(decode);
 use XML::RSS;
+use DateTime;
 
 our $VERSION = '0.1';
 
@@ -10,12 +11,16 @@ my %content = (
     src  => {
         news   => 'news.yml',
         events => 'events.yml',
-        earlier_events => 'earlier_events.yml',
+        earlier_events => 'events.yml',
     },
 );
 
 sub _read_file {
     my $name = shift;
+
+    my $now = DateTime->now->ymd;  # YYYY-MM-DD
+    $now =~ s/-/./g;
+
     my $file = path config->{appdir}, 'data', $content{src}{$name};
     my $current_stamp = (stat($file))[9];
 
@@ -25,9 +30,9 @@ sub _read_file {
         if ($name eq 'news') {
             $content{data}{$name}{$sub} = $data;
         } elsif ($name eq 'events') {
-            $content{data}{$name}{$sub} = $data;
+            $content{data}{$name}{$sub} = [ grep {$_->{date} ge $now} @$data ];
         } elsif ($name eq 'earlier_events') {
-            $content{data}{$name}{$sub} = [ reverse @$data ];
+            $content{data}{$name}{$sub} = [ reverse grep {$_->{date} lt $now } @$data ];
         }
         $content{stamp}{$name} = $current_stamp;
     }

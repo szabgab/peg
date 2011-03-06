@@ -17,6 +17,7 @@ WriteMakefile(
         'Dancer'     => 1.2003,
 	'Template'   => 0,
     	'XML::RSS'   => 0,
+	'DateTime'   => 0,
     	'Encode'     => 0,
     	'Test::NoWarnings' => 0,
     },

@@ -1,19 +1,92 @@
 ---
-  - date: 2011.03.19-20
-    title: Chemnitzer Linux-Tage
-    address: Chemnitz, Germany
-  - date: 2011.03.22-24
-    title: UKUUG
-    address: Leeds, UK
-  - date: 2011.03.23-25
-    title: POSCON
-    address: Columbia, South Carolina, USA
-  - date: 2011.04.9
-    title: Grazer LinuxTag
-    address: Graz, Austria
-  - date: 2011.04.30-05.1
-    title: Linuxfest Northwest
-    address: Bellingham, Washington, USA
-  - date: 2011.05.11-14
+  - date: 2010.02.06
+    days: 2
+    title: FOSDEM
+    address: Brussels, Belgium
+  - date: 2010.03.02
+    days: 5
+    title: CeBIT
+    address: Hannover, Germany
+  - date: 2010.06.07
+    days: 3
+    title: German Perl Workshop
+    address: Schorndorf (near Stuttgart), Germany
+  - date: 2010.06.9
+    days: 4
     title: LinuxTag
     address: Berlin, Germany
+  - date: 2010.06.21
+    days: 3
+    title: YAPC::NA
+    address: Columbus, Ohio, USA
+  - date: 2010.06.26
+    days: 1
+    title: Belgian Perl Workshop
+    address: Brussels, Belgium
+  - date: 2010.08.4
+    days: 3
+    title: YAPC::EU
+    address: Pisa, Italy
+  - date: 2010.08.21
+    days: 2
+    title: FrOSCon
+    address: St Augustin, Germany
+  - date: 2010.09.17
+    days: 2
+    title: FrOSCamp
+    address: Zurich, Switzerland
+  - date: 2010.10.20
+    days: 1
+    title: The establishment of the Perl Ecosystem Group
+    address:
+  - date: 2010.11.6
+    days: 2
+    title: T-Does
+    address: Eindhoven, The Netherlands
+  - date: 2011.01.18
+    days: 2
+    title: Plat_forms contest
+    address: Nurnberg, Germany
+    details: plat_forms_2011
+  - date: 2011.02.5
+    days: 2
+    title: FOSDEM
+    address: Brussels, Belgium
+    details: fosdem_2011
+  - date: 2011.02.12
+    days: 1
+    title: Linux Informationstag
+    address: Oldenburg, Germany
+  - date: 2011.02.25
+    days: 3
+    title: SCALE - Annual Southern California Linux Expo
+    address: Los Angeles, USA, California
+  - date: 2011.03.01
+    days: 5
+    title: CeBIT 2011
+    address: Hannover, Germany
+  - date: 2011.03.19
+    days: 2
+    title: Chemnitzer Linux-Tage
+    address: Chemnitz, Germany
+  - date: 2011.03.22
+    days: 3
+    title: UKUUG
+    address: Leeds, UK
+  - date: 2011.03.23
+    days: 3
+    title: POSCON
+    address: Columbia, South Carolina, USA
+  - date: 2011.04.09
+    days: 1
+    title: Grazer LinuxTag
+    address: Graz, Austria
+  - date: 2011.04.30
+    days: 2
+    title: Linuxfest Northwest
+    address: Bellingham, Washington, USA
+  - date: 2011.05.11
+    days: 4
+    title: LinuxTag
+    address: Berlin, Germany
+
