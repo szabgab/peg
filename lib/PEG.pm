@@ -3,6 +3,7 @@ use Dancer ':syntax';
 
 use Encode qw(decode);
 use XML::RSS;
+use Data::Dumper qw(Dumper);
 use DateTime;
 use Data::ICal;
 use Data::ICal::Entry::Event;
@@ -30,7 +31,10 @@ sub _read_file {
 
     my $sub = $name eq 'news' ? 'news' : 'events';
     if (not $content{data}{$name} or $content{stamp}{$name} < $current_stamp) {
-        my $data = YAML::LoadFile($file);
+        my $data = eval { YAML::LoadFile($file) };
+        if ($@) {
+            warn "could not load '$file' $@";
+        }
         if ($name eq 'news') {
             $content{data}{$name}{$sub} = $data;
         } elsif ($name eq 'events') {
@@ -204,12 +208,19 @@ sub _event_text {
 
     $text .= "<br />";
     if ($n->{url}) {
+        if (not defined $n->{title}) {
+             warn "title is missing " . Dumper $n;
+             $n->{title} = 'NA';
+        }
         $text .= qq{ <a href="$n->{url}">$n->{title}</a><br /> };
     }
     if ($n->{wiki}) {
         $n->{wiki} =~ s/ /_/g;
         my $wiki = "http://perlfoundation.org/perl5/$n->{wiki}";
         $text .= qq{ Presence is being organized on the <a href="$wiki">wiki</a><br /> };
+    }
+    if (not defined $n->{address}) {
+       warn "address is missing " . Dumper $n;
     }
     $text .= " Location: $n->{address}<br />";
     return $text;
