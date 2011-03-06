@@ -34,10 +34,10 @@ text-decoration: none;
 
 #page {
 background-color: #ddd;
-width: 750px;
+width: 950px;
 margin: 0;
 margin-left: auto;
-padding-left: 100px;
+padding-left: 50px;
 margin-right: auto;
 }
 
@@ -46,7 +46,7 @@ background-color: white;
 border: 3px solid #aaa;
 border-top: none;
 padding: 25px;
-width: 500px;
+width: 700px;
 }
 
 #sidebar {

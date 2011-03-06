@@ -49,10 +49,6 @@
 
 </div> <!-- page -->
 
-<div id="footer">
-Powered by <a href="http://perldancer.org/">Dancer</a>
-</div>
-
 <script type="text/javascript">
 
   var _gaq = _gaq || [];

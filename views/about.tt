@@ -13,7 +13,7 @@ See <a href="/what">what</a> is the Perl Ecosystem Group about,
 <h2>Technical</h2>
 <p>
 The web site of the Perl Ecosystem Group is built using <a href="http://perldancer.org/">Perl Dancer</a> framework.
-It source code can be found on <a href="https://github.com/szabgab/peg">Github</a>.
+The source code can be found on <a href="https://github.com/szabgab/peg">Github</a>.
 </p>
 
 </div>
