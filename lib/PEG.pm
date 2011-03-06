@@ -59,7 +59,16 @@ get qr{^ / ([\w/-]+) $ }x => sub {
     template $page => _content->{$page};
 };
 
+# for historical reasons:
 get '/rss' => sub {
+	return _rss('news');
+};
+
+get '/rss/news' => sub {
+	return _rss('news');
+};
+
+sub _rss {
     my $rss  = XML::RSS->new( version => '1.0' );
     my $year = 1900 + (localtime)[5];
     my $url  = 'http://perl-ecosystem.org';
