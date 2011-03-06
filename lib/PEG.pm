@@ -1,8 +1,12 @@
 package PEG;
 use Dancer ':syntax';
+
 use Encode qw(decode);
 use XML::RSS;
 use DateTime;
+use Data::ICal;
+use Data::ICal::Entry::Event;
+use DateTime::Format::ICal;
 
 our $VERSION = '0.1';
 
@@ -71,6 +75,42 @@ get qr{^ / ([\w/-]+) $ }x => sub {
     # render it
     template $page => _content->{$page};
 };
+
+
+get '/calendar' => sub {
+
+    my $calendar = Data::ICal->new();
+
+    foreach my $n (@{ _content()->{events}{events} }) {
+        my $url = '';
+        if ($n->{url}) {
+            $url = $n->{url};
+        }
+        my $wiki = '';
+        if ($n->{wiki}) {
+             $n->{wiki} =~ s/ /_/g;
+             $wiki = "http://perlfoundation.org/perl5/$n->{wiki}";
+        }
+        my ($year, $month, $day) = split /\./, $n->{date};
+        my $dt = DateTime->new(year => $year, month => $month, day => $day);
+        my $duration = DateTime::Duration->new(days => $n->{days});
+        my $vevent = Data::ICal::Entry::Event->new();
+        $vevent->add_properties(
+            summary => decode( 'utf-8', $n->{title} ),
+            description => "",
+            dtstart   => DateTime::Format::ICal->format_datetime($dt),
+            location => ($n->{address} || ''),
+            url => ($wiki || $url || ''),
+            duration => DateTime::Format::ICal->format_duration($duration),
+        );
+
+        $calendar->add_entry($vevent);
+    }
+
+    return $calendar->as_string;
+};
+
+
 
 # for historical reasons:
 get '/rss' => sub {
