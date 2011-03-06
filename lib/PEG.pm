@@ -21,7 +21,14 @@ sub _read_file {
 
     my $sub = $name eq 'news' ? 'news' : 'events';
     if (not $content{data}{$name} or $content{stamp}{$name} < $current_stamp) {
-        $content{data}{$name}{$sub} = YAML::LoadFile($file);
+        my $data = YAML::LoadFile($file);
+        if ($name eq 'news') {
+            $content{data}{$name}{$sub} = $data;
+        } elsif ($name eq 'events') {
+            $content{data}{$name}{$sub} = $data;
+        } elsif ($name eq 'earlier_events') {
+            $content{data}{$name}{$sub} = [ reverse @$data ];
+        }
         $content{stamp}{$name} = $current_stamp;
     }
     return;
@@ -62,11 +69,11 @@ get qr{^ / ([\w/-]+) $ }x => sub {
 
 # for historical reasons:
 get '/rss' => sub {
-	return _rss('news');
+    return _rss('news');
 };
 
 get '/rss/news' => sub {
-	return _rss('news');
+    return _rss('news');
 };
 
 sub _rss {
