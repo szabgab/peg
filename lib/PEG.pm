@@ -170,7 +170,7 @@ sub _rss {
                 $n->{wiki} =~ s/ /_/g;
                 $wiki = "http://perlfoundation.org/perl5/$n->{wiki}";
             }
-            $link = $wiki || $n->{url} || '';
+            $link = $wiki || $n->{url} || $url || '';
         }
 
         $rss->add_item(
