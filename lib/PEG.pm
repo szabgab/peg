@@ -57,8 +57,10 @@ get qr{^ / (?: index \. html )? $}x => sub {
 };
 
 my @pages = qw{
-    what why who sponsors members events contact
-    membership benefits about news earlier_events mailing_lists
+    what why who sponsors members contact
+    membership benefits about earlier_events mailing_lists
+
+    news
     news/grants-to-invite-speakers-to-non-perl-events
     news/announcement-and-public-discussion-lists
     events/fosdem_2011
@@ -76,6 +78,11 @@ get qr{^ / ([\w/-]+) $ }x => sub {
     template $page => _content->{$page};
 };
 
+get '/events' => sub {
+    my @events = map {$_->{text} = _event_text($_); $_} @{ _content->{events}{events} };
+
+    template 'events' => {events => \@events};
+};
 
 get '/calendar' => sub {
 
@@ -155,22 +162,7 @@ sub _rss {
         $text =~ s{"/}{"$base/}g;
 
         if ($name eq 'events') {
-            if ($n->{days} == 1) {
-                $text = "On $n->{date}";
-            } else {
-                $text = "starting on $n->{date} for $n->{days} days";
-            }
-
-            $text .= "<br />";
-            if ($n->{url}) {
-                $text .= qq{ <a href="$n->{url}">$n->{title}</a><br /> };
-            }
-            if ($n->{wiki}) {
-                $n->{wiki} =~ s/ /_/g;
-                my $wiki = "http://perlfoundation.org/perl5/$n->{wiki}";
-                $text .= qq{ Presence is being organized on the <a href="$wiki">wiki</a><br /> };
-            }
-            $text .= " Location: $n->{address}<br />";
+            $text = _event_text($n);
         }
 
         $rss->add_item(
@@ -191,5 +183,29 @@ sub _rss {
 
     return $rss->as_string;
 };
+
+sub _event_text {
+    my ($n) = @_;
+
+    my $text = '';
+    if ($n->{days} == 1) {
+        $text = "On $n->{date}";
+    } else {
+        $text = "starting on $n->{date} for $n->{days} days";
+    }
+
+    $text .= "<br />";
+    if ($n->{url}) {
+        $text .= qq{ <a href="$n->{url}">$n->{title}</a><br /> };
+    }
+    if ($n->{wiki}) {
+        $n->{wiki} =~ s/ /_/g;
+        my $wiki = "http://perlfoundation.org/perl5/$n->{wiki}";
+        $text .= qq{ Presence is being organized on the <a href="$wiki">wiki</a><br /> };
+    }
+    $text .= " Location: $n->{address}<br />";
+    return $text;
+}
+
 
 true;

@@ -16,7 +16,8 @@ See information about the <a href="/earlier_events">earlier events</a>.
 <div id="schedule">
 <ul>
 <% FOR e IN events %>
-<li><ul><li><% e.date %></li><li><% e.title %>, <% e.address %></li></ul></li>
+<li><ul><li><% e.date %></li><li><% e.title %>, <% e.address %><br />
+      <% e.text %></li></ul></li>
 <% END %>
 </ul>
 </div>
