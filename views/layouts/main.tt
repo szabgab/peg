@@ -9,6 +9,7 @@
   <meta name="keywords" content="Perl, training, consulting, business, community, promotion, advocacy" />
   <meta name="description" content="<% template.description %>" />
   <link href="/rss/news" rel="alternate" type="application/rss+xml" title ="Perl Ecosystem Group News" />
+  <link href="/rss/events" rel="alternate" type="application/rss+xml" title ="Perl Ecosystem Group Events" />
 </head>
 <body>
 
