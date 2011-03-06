@@ -120,6 +120,17 @@ sub _rss {
             } else {
                 $text = "starting on $n->{date} for $n->{days} days";
             }
+
+            $text .= "<br />";
+            if ($n->{url}) {
+                $text .= qq{ <a href="$n->{url}">$n->{title}</a><br /> };
+            }
+            if ($n->{wiki}) {
+                $n->{wiki} =~ s/ /_/g;
+                my $wiki = "http://perlfoundation.org/perl5/$n->{wiki}";
+                $text .= qq{ Presence is being organized on the <a href="$wiki">wiki</a><br /> };
+            }
+            $text .= " Location: $n->{address}<br />";
         }
 
         $rss->add_item(

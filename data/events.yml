@@ -69,6 +69,8 @@
     days: 2
     title: Chemnitzer Linux-Tage
     address: Chemnitz, Germany
+    url: http://chemnitzer.linux-tage.de/
+    wiki: events 2011 linuxtage chemnitz
   - date: 2011.03.22
     days: 3
     title: UKUUG
