@@ -41,7 +41,7 @@
     address:
   - date: 2010.11.6
     days: 2
-    title: T-Does
+    title: T-Dose
     address: Eindhoven, The Netherlands
   - date: 2011.01.18
     days: 2
@@ -65,6 +65,11 @@
     days: 5
     title: CeBIT 2011
     address: Hannover, Germany
+  - date: 2011.03.11
+    days: 2
+    title: Cascadia IT Conference
+    address: Seattle, Washington, USA
+    url: http://www.casitconf.org/casitconf11/Home.html
   - date: 2011.03.19
     days: 2
     title: Chemnitzer Linux-Tage
@@ -75,20 +80,86 @@
     days: 3
     title: UKUUG
     address: Leeds, UK
+    url: http://www.ukuug.org/
+  - date: 2011.03.22
+    days: 4
+    title: GUUG Fruhjahrsfachgesprach
+    url: http://www.guug.de/veranstaltungen/ffg2011/
+    address: Weimar, Germany  
   - date: 2011.03.23
     days: 3
     title: POSCON
+    url: http://posscon.org/
     address: Columbia, South Carolina, USA
+  - date: 2011.03.24
+    days: 1
+    title: EdTechDay
+    url: http://www.ithaca.edu/edtechday/
+    address: Ithaca, NY, USA
+  - date: 2011.03.26
+    days: 2
+    title: XML Prague
+    url: http://www.xmlprague.cz/2011/
+    address: Prague, Czech Republic
+  - date: 2011.03.26
+    days: 2
+    title: OSDC.tw
+    url: http://www.osdc.tw/
+    address: Taipei, Taiwan
+  - date: 2011.03.29
+    days: 1
+    title: Hot Ice - Internet, Cloud
+    url: http://www.usenix.org/events/hotice11/
+    address: Boston, Massachusetts, USA
+  - date: 2011.04.02
+    days: 1
+    title: Texas Linux Fest
+    url: http://www.texaslinuxfest.org/
+    address: Austin, Texas, USA
+    wiki: events 2011 texas linux fest
+    comment: Conference
   - date: 2011.04.09
     days: 1
     title: Grazer LinuxTag
+    url: http://www.linuxtage.at/
     address: Graz, Austria
+    comment: 500 ppl
+  - date: 2011.04.09
+    days: 2
+    title: Barcamp Boston
+    url: http://www.barcampboston.org/
+    address: Boston, Massachusetts, USA
+  - date: 2011.04.12
+    days: 2
+    title: Internet World
+    url: http://www.internetworld-messe.de/
+    address: Munchen, Germany
+  - date: 2011.04.19
+    days: 2
+    title: Infotec
+    url: http://www.infotec.org/
+    address: Omaha, Nebraska, USA
+    comment: jhannah? - Join forces with annual OLUG http://www.olug.org/ booth? - conference 
+  - date: 2011.04.25
+    days: 3
+    title: Russian Internet Technologies
+    url: http://ritconf.ru/
+    address: Moscow, Russia
   - date: 2011.04.30
     days: 2
     title: Linuxfest Northwest
+    url: http://linuxfestnorthwest.org/
     address: Bellingham, Washington, USA
+    wiki: events 2011 linuxfest northwest
+  - date: 2011.05.10
+    days: 3
+    title: Solutions Linux France
+    url: http://www.solutionslinux.fr/
+    address: Paris, France
   - date: 2011.05.11
     days: 4
     title: LinuxTag
+    url: http://www.linuxtag.org/
     address: Berlin, Germany
+    wiki: events 2011 linuxtag berlin
 
