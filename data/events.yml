@@ -162,4 +162,133 @@
     url: http://www.linuxtag.org/
     address: Berlin, Germany
     wiki: events 2011 linuxtag berlin
+  - date: 2011.05.13
+    days: 2
+    title: BSDCan - The BSD Conference
+    url: http://www.bsdcan.org/2011/
+    address: Ottawa, Canada
+    comment: Conference
+  - date: 2011.05.13
+    days: 3
+    title: YAPC::Russia (May Perl)
+    url: http://event.perlrussia.org/
+    address: Moscow, Russia
+  - date: 2011.05.16
+    days: 2
+    title: OSBC - Open Source Business Conference
+    url: http://www.osbc.com/
+    address: San Francisco, California, USA
+  - date: 2011.06.10
+    days: 3
+    title: SouthEast LinuxFest
+    url: http://www.southeastlinuxfest.org/
+    address: Spartanburg, South Carolina, USA
+  - date: 2011.06.21
+    days: 2
+    title: Cloud Computing World Forum
+    url: http://www.cloudwf.com/
+    address: London, UK
+  - date: 2011.06.21
+    days: 4
+    title: Open Source Bridge
+    url: http://opensourcebridge.org/
+    address: Portland, Oregon, USA
+  - date: 2011.06.24
+    days: 2
+    title: FPW - French Perl Workshop
+    url: http://perlworkshop.fr/
+    address: Paris, France
+    comment: approx 80ppl
+  - date: 2011.06.27
+    days: 3
+    title: YAPC::NA
+    url: http://conferences.mongueurs.net/yn2011/
+    address: Asheville, North Carolina, USA
+  - date: 2011.07.9
+    days: 6
+    title: LSM - Libre Software Meeting
+    url: http://2011.rmll.info/
+    address: Strasbourg, France
+  - date: 2011.07.15
+    days: 3
+    title: BOSC
+    url: http://www.open-bio.org/wiki/BOSC_2011
+    address: Vienna, Austria
+    comment: Bioinformatics Open Source Conference
+  - date: 2011.07.16
+    days: 9
+    title: Open Community Camp
+    url: http://opencommunitycamp.org
+    address: Oegstgeest (near Leiden), The Netherlands
+  - date: 2011.07.23
+    days: 1
+    title: FOSSCON
+    url: http://fosscon.org/
+    address: Philadelphia, Pennsylvania, USA
+    wiki: events 2011 fosscon
+  - date: 2011.07.24
+    days: 6
+    title: DebConf
+    url: http://debconf.org/
+    address: Banja Luka, Bosnia and Herzegovina
+  - date: 2010.07.25
+    days: 5
+    title: OSCON
+    url: http://en.oreilly.com/oscon2010
+    address: Portland, Oregon, USA
+    comment: conference
+  - date: 2011.08.15
+    days: 3
+    title: YAPC Europe
+    url: http://yapceurope.lv/
+    address: Riga, Latvia
+  - date: 2011.08.17
+    days: 3
+    title: LinuxCon North America
+    url: http://events.linuxfoundation.org/events/linuxcon
+    address: Vancouver, Canada
+  - date: 2011.08.20
+    days: 2
+    title: FrOSCon 6
+    url: http://www.froscon.de
+    address: St. Augustin, Germany
+    wiki: events_2011_froscon
+  - date: 2011.09.08
+    days: 2
+    title: Italian Perl Workshop
+    url: http://conferences.yapceurope.org/ipw2011/
+    address: Torino, Italy
+  - date: 2011.09.01
+    days: 1
+    title: Froscamp
+    url: http://wiki.froscamp.org/Welcome
+    address: Zurich, Switzerland
+    wiki: events_2011_froscamp_zurich
+  - date: 2011.10.06
+    days: 2
+    title: OSS 2011
+    url: http://oss2011.org/
+    address: Salvador, BA, Brazil
+  - date: 2011.10.21
+    days: 3
+    title: LITS
+    url: http://www.litshow.co.uk/
+    address: London, UK
+  - date: 2011.10.28
+    days: 2
+    title: 9. Kieler Open Source und Linux Tage
+    url: http://www.kieler-linuxtage.de/
+    address: Kiel, Germany
+  - date: 2011.11.5
+    days: 2
+    title: T-Dose
+    url: http://www.t-dose.org/
+    address: Eindhoven, The Netherlands
+    wiki: events_2011_t_dose_eindhoven
+  - date: 2011.11.12
+    days: 2
+    title: OpenRheinRuhr
+    url: http://openrheinruhr.de/
+    address: Oberhausen, Germany
+    wiki: events_2011_openrheinruhr
 
