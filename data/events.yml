@@ -1,37 +1,37 @@
 ---
-  - date: 2010.02.06
+  - date: 2010.2.6
     days: 2
     title: FOSDEM
     address: Brussels, Belgium
-  - date: 2010.03.02
+  - date: 2010.3.2
     days: 5
     title: CeBIT
     address: Hannover, Germany
-  - date: 2010.06.07
+  - date: 2010.6.7
     days: 3
     title: German Perl Workshop
     address: Schorndorf (near Stuttgart), Germany
-  - date: 2010.06.9
+  - date: 2010.6.9
     days: 4
     title: LinuxTag
     address: Berlin, Germany
-  - date: 2010.06.21
+  - date: 2010.6.21
     days: 3
     title: YAPC::NA
     address: Columbus, Ohio, USA
-  - date: 2010.06.26
+  - date: 2010.6.26
     days: 1
     title: Belgian Perl Workshop
     address: Brussels, Belgium
-  - date: 2010.08.4
+  - date: 2010.8.4
     days: 3
     title: YAPC::EU
     address: Pisa, Italy
-  - date: 2010.08.21
+  - date: 2010.8.21
     days: 2
     title: FrOSCon
     address: St Augustin, Germany
-  - date: 2010.09.17
+  - date: 2010.9.17
     days: 2
     title: FrOSCamp
     address: Zurich, Switzerland
@@ -43,248 +43,248 @@
     days: 2
     title: T-Dose
     address: Eindhoven, The Netherlands
-  - date: 2011.01.18
+  - date: 2011.1.18
     days: 2
     title: Plat_forms contest
     address: Nurnberg, Germany
     details: plat_forms_2011
-  - date: 2011.02.5
+  - date: 2011.2.5
     days: 2
     title: FOSDEM
     address: Brussels, Belgium
     details: fosdem_2011
-  - date: 2011.02.12
+  - date: 2011.2.12
     days: 1
     title: Linux Informationstag
     address: Oldenburg, Germany
-  - date: 2011.02.25
+  - date: 2011.2.25
     days: 3
     title: SCALE - Annual Southern California Linux Expo
     address: Los Angeles, USA, California
-  - date: 2011.03.01
+  - date: 2011.3.1
     days: 5
     title: CeBIT 2011
     address: Hannover, Germany
-  - date: 2011.03.11
+  - date: 2011.3.11
     days: 2
     title: Cascadia IT Conference
     address: Seattle, Washington, USA
     url: http://www.casitconf.org/casitconf11/Home.html
-  - date: 2011.03.19
+  - date: 2011.3.19
     days: 2
     title: Chemnitzer Linux-Tage
     address: Chemnitz, Germany
     url: http://chemnitzer.linux-tage.de/
     wiki: events 2011 linuxtage chemnitz
     peg: Renee Baecker
-  - date: 2011.03.22
+  - date: 2011.3.22
     days: 3
     title: UKUUG
     address: Leeds, UK
     url: http://www.ukuug.org/
-  - date: 2011.03.22
+  - date: 2011.3.22
     days: 4
     title: GUUG Fruhjahrsfachgesprach
     url: http://www.guug.de/veranstaltungen/ffg2011/
     address: Weimar, Germany  
-  - date: 2011.03.23
+  - date: 2011.3.23
     days: 3
     title: POSCON
     url: http://posscon.org/
     address: Columbia, South Carolina, USA
-  - date: 2011.03.24
+  - date: 2011.3.24
     days: 1
     title: EdTechDay
     url: http://www.ithaca.edu/edtechday/
     address: Ithaca, NY, USA
-  - date: 2011.03.26
+  - date: 2011.3.26
     days: 2
     title: XML Prague
     url: http://www.xmlprague.cz/2011/
     address: Prague, Czech Republic
-  - date: 2011.03.26
+  - date: 2011.3.26
     days: 2
     title: OSDC.tw
     url: http://www.osdc.tw/
     address: Taipei, Taiwan
-  - date: 2011.03.29
+  - date: 2011.3.29
     days: 1
     title: Hot Ice - Internet, Cloud
     url: http://www.usenix.org/events/hotice11/
     address: Boston, Massachusetts, USA
-  - date: 2011.04.02
+  - date: 2011.4.2
     days: 1
     title: Texas Linux Fest
     url: http://www.texaslinuxfest.org/
     address: Austin, Texas, USA
     wiki: events 2011 texas linux fest
     comment: Conference
-  - date: 2011.04.09
+  - date: 2011.4.9
     days: 1
     title: Grazer LinuxTag
     url: http://www.linuxtage.at/
     address: Graz, Austria
     comment: 500 ppl
-  - date: 2011.04.09
+  - date: 2011.4.9
     days: 2
     title: Barcamp Boston
     url: http://www.barcampboston.org/
     address: Boston, Massachusetts, USA
-  - date: 2011.04.12
+  - date: 2011.4.12
     days: 2
     title: Internet World
     url: http://www.internetworld-messe.de/
     address: Munchen, Germany
-  - date: 2011.04.19
+  - date: 2011.4.19
     days: 2
     title: Infotec
     url: http://www.infotec.org/
     address: Omaha, Nebraska, USA
     comment: jhannah? - Join forces with annual OLUG http://www.olug.org/ booth? - conference 
-  - date: 2011.04.25
+  - date: 2011.4.25
     days: 3
     title: Russian Internet Technologies
     url: http://ritconf.ru/
     address: Moscow, Russia
-  - date: 2011.04.30
+  - date: 2011.4.30
     days: 2
     title: Linuxfest Northwest
     url: http://linuxfestnorthwest.org/
     address: Bellingham, Washington, USA
     wiki: events 2011 linuxfest northwest
-  - date: 2011.05.05
+  - date: 2011.5.5
     days: 3
     title: Wiener LinuxTag (Linux Wochen)
     url: http://www.linuxwochen.at/
     address: Vienna, Austria
     wiki: events 2011 linuxtag wien
-  - date: 2011.05.10
+  - date: 2011.5.10
     days: 3
     title: Solutions Linux France
     url: http://www.solutionslinux.fr/
     address: Paris, France
-  - date: 2011.05.11
+  - date: 2011.5.11
     days: 4
     title: LinuxTag
     url: http://www.linuxtag.org/
     address: Berlin, Germany
     wiki: events 2011 linuxtag berlin
-  - date: 2011.05.12
+  - date: 2011.5.12
     days: 3
     title: Linz  LinuxTag (Linux Wochen)
     url: http://www.linuxwochen.at/
     address: Linz, Austria
     comment:
-  - date: 2011.05.13
+  - date: 2011.5.13
     days: 2
     title: BSDCan - The BSD Conference
     url: http://www.bsdcan.org/2011/
     address: Ottawa, Canada
     comment: Conference
-  - date: 2011.05.13
+  - date: 2011.5.13
     days: 3
     title: YAPC::Russia (May Perl)
     url: http://event.perlrussia.org/
     address: Moscow, Russia
-  - date: 2011.05.16
+  - date: 2011.5.16
     days: 2
     title: OSBC - Open Source Business Conference
     url: http://www.osbc.com/
     address: San Francisco, California, USA
-  - date: 2011.05.20
+  - date: 2011.5.20
     days: 2
     title: Eisenstadt LinuxTag (Linux Wochen)
     url: http://www.linuxwochen.at/
     address: Eisenstadt, Austria
     comment:
-  - date: 2011.06.10
+  - date: 2011.6.10
     days: 3
     title: SouthEast LinuxFest
     url: http://www.southeastlinuxfest.org/
     address: Spartanburg, South Carolina, USA
-  - date: 2011.06.21
+  - date: 2011.6.21
     days: 2
     title: Cloud Computing World Forum
     url: http://www.cloudwf.com/
     address: London, UK
-  - date: 2011.06.21
+  - date: 2011.6.21
     days: 4
     title: Open Source Bridge
     url: http://opensourcebridge.org/
     address: Portland, Oregon, USA
-  - date: 2011.06.24
+  - date: 2011.6.24
     days: 2
     title: FPW - French Perl Workshop
     url: http://perlworkshop.fr/
     address: Paris, France
     comment: approx 80ppl
-  - date: 2011.06.27
+  - date: 2011.6.27
     days: 3
     title: YAPC::NA
     url: http://conferences.mongueurs.net/yn2011/
     address: Asheville, North Carolina, USA
     peg: Gabor Szabo
-  - date: 2011.07.9
+  - date: 2011.7.9
     days: 6
     title: LSM - Libre Software Meeting
     url: http://2011.rmll.info/
     address: Strasbourg, France
-  - date: 2011.07.15
+  - date: 2011.7.15
     days: 3
     title: BOSC
     url: http://www.open-bio.org/wiki/BOSC_2011
     address: Vienna, Austria
     comment: Bioinformatics Open Source Conference
-  - date: 2011.07.16
+  - date: 2011.7.16
     days: 9
     title: Open Community Camp
     url: http://opencommunitycamp.org
     address: Oegstgeest (near Leiden), The Netherlands
-  - date: 2011.07.23
+  - date: 2011.7.23
     days: 1
     title: FOSSCON
     url: http://fosscon.org/
     address: Philadelphia, Pennsylvania, USA
     wiki: events 2011 fosscon
-  - date: 2011.07.24
+  - date: 2011.7.24
     days: 6
     title: DebConf
     url: http://debconf.org/
     address: Banja Luka, Bosnia and Herzegovina
-  - date: 2010.07.25
+  - date: 2010.7.25
     days: 5
     title: OSCON
     url: http://en.oreilly.com/oscon2010
     address: Portland, Oregon, USA
     comment: conference
-  - date: 2011.08.15
+  - date: 2011.8.15
     days: 3
     title: YAPC Europe
     url: http://yapceurope.lv/
     address: Riga, Latvia
-  - date: 2011.08.17
+  - date: 2011.8.17
     days: 3
     title: LinuxCon North America
     url: http://events.linuxfoundation.org/events/linuxcon
     address: Vancouver, Canada
-  - date: 2011.08.20
+  - date: 2011.8.20
     days: 2
     title: FrOSCon 6
     url: http://www.froscon.de
     address: St. Augustin, Germany
     wiki: events_2011_froscon
-  - date: 2011.09.08
+  - date: 2011.9.8
     days: 2
     title: Italian Perl Workshop
     url: http://conferences.yapceurope.org/ipw2011/
     address: Torino, Italy
-  - date: 2011.09.01
+  - date: 2011.9.1
     days: 1
     title: Froscamp
     url: http://wiki.froscamp.org/Welcome
     address: Zurich, Switzerland
     wiki: events_2011_froscamp_zurich
-  - date: 2011.10.06
+  - date: 2011.10.6
     days: 2
     title: OSS 2011
     url: http://oss2011.org/
