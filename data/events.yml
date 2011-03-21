@@ -152,6 +152,12 @@
     url: http://linuxfestnorthwest.org/
     address: Bellingham, Washington, USA
     wiki: events 2011 linuxfest northwest
+  - date: 2011.05.05
+    days: 3
+    title: Wiener LinuxTag (Linux Wochen)
+    url: http://www.linuxwochen.at/
+    address: Vienna, Austria
+    wiki: events 2011 linuxtag wien
   - date: 2011.05.10
     days: 3
     title: Solutions Linux France
@@ -163,6 +169,12 @@
     url: http://www.linuxtag.org/
     address: Berlin, Germany
     wiki: events 2011 linuxtag berlin
+  - date: 2011.05.12
+    days: 3
+    title: Linz  LinuxTag (Linux Wochen)
+    url: http://www.linuxwochen.at/
+    address: Linz, Austria
+    comment:
   - date: 2011.05.13
     days: 2
     title: BSDCan - The BSD Conference
@@ -179,6 +191,12 @@
     title: OSBC - Open Source Business Conference
     url: http://www.osbc.com/
     address: San Francisco, California, USA
+  - date: 2011.05.20
+    days: 2
+    title: Eisenstadt LinuxTag (Linux Wochen)
+    url: http://www.linuxwochen.at/
+    address: Eisenstadt, Austria
+    comment:
   - date: 2011.06.10
     days: 3
     title: SouthEast LinuxFest
