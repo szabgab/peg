@@ -76,6 +76,7 @@
     address: Chemnitz, Germany
     url: http://chemnitzer.linux-tage.de/
     wiki: events 2011 linuxtage chemnitz
+    peg: Renee Baecker
   - date: 2011.03.22
     days: 3
     title: UKUUG
@@ -204,6 +205,7 @@
     title: YAPC::NA
     url: http://conferences.mongueurs.net/yn2011/
     address: Asheville, North Carolina, USA
+    peg: Gabor Szabo
   - date: 2011.07.9
     days: 6
     title: LSM - Libre Software Meeting
