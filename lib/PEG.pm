@@ -98,7 +98,20 @@ get '/events/table' => sub {
              #$wiki = "http://perlfoundation.org/perl5/$e->{wiki}";
              $wiki = qq(<a target="_top" href="https://www.socialtext.net/perl5/$e->{wiki}">$e->{wiki}</a>);
          }
-         $html .= qq(<tr><td>$e->{date}</td><td><a href="$e-{>url}">$e->{title}</a></td><td>$e->{address}</td><td>$wiki</td></tr>\n);
+         my ($year, $month, $day) = split /\./, $e->{date};
+         my $dt = DateTime->new(year => $year, month => $month, day => $day);
+         my $duration = DateTime::Duration->new(days => $e->{days});
+         my $date = $e->{date};
+         if ($e->{days} > 1) {
+		$dt->add_duration($duration);
+                my @date;
+                push @date, $dt->year if $dt->year ne $year;
+                push @date, $dt->month if $dt->month ne $month;
+                push @date, $dt->day if $dt->day ne $day;
+                #$date .= '-' . join('.', $dt->year, $dt->month, $dt->day);
+                $date .= '-' . join('.', @date);
+         }
+         $html .= qq(<tr><td>$date</td><td><a href="$e-{>url}">$e->{title}</a></td><td>$e->{address}</td><td>$wiki</td></tr>\n);
     }
     $html .= "</table>\n";
 
