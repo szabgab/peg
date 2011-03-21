@@ -88,6 +88,24 @@ get '/events' => sub {
     template 'events' => {events => \@events};
 };
 
+get '/events/table' => sub {
+    my $html = "<h2>Events</h2>\n";
+    $html .= qq(<table border="1" style="border-collapse:collapse" options="" class="formatter_table">\n);
+    foreach my $e (@{ _content()->{events}{events} }) {
+         my $wiki = '&nbsp;';
+         if ($e->{wiki}) {
+             $e->{wiki} =~ s/ /_/g;
+             #$wiki = "http://perlfoundation.org/perl5/$e->{wiki}";
+             $wiki = qq(<a target="_top" href="https://www.socialtext.net/perl5/$e->{wiki}">$e->{wiki}</a>);
+         }
+         $html .= qq(<tr><td>$e->{date}</td><td><a href="$e-{>url}">$e->{title}</a></td><td>$e->{address}</td><td>$wiki</td></tr>\n);
+    }
+    $html .= "</table>\n";
+
+    return $html;
+};
+
+
 get '/calendar' => sub {
 
     my $calendar = Data::ICal->new();
