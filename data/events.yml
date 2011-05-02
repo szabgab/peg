@@ -311,4 +311,8 @@
     url: http://openrheinruhr.de/
     address: Oberhausen, Germany
     wiki: events_2011_openrheinruhr
+  - date: 2012.3.5
+    days: 3
+    title: German Perl Workshop
+    address: Erlangen, Germany
 
