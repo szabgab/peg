@@ -69,6 +69,7 @@ my @pages = qw{
     news/announcement-and-public-discussion-lists
     events/fosdem_2011
     events/plat_forms_2011
+    events/linuxtag_berlin_2011
 };
 
 get qr{^ / ([\w/-]+) $ }x => sub {
