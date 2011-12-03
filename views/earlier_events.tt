@@ -16,7 +16,11 @@ List of events where we have already participated even before the formation of t
 <% IF e.details %>
    <a href="/events/<% e.details %>"><% e.title %></a>
 <% ELSE %>
-   <% e.title %>
+   <% IF e.url %>
+      <a href="<% e.url %>"><% e.title %></a>
+   <% ELSE %>
+      <% e.title %>
+   <% END %>
 <% END %>
 , <% e.address %></li></ul></li>
 <% END %>
