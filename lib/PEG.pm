@@ -112,7 +112,9 @@ get '/events/table' => sub {
                 #$date .= '-' . join('.', $dt->year, $dt->month, $dt->day);
                 $date .= '-' . join('.', @date);
          }
-         $html .= qq(<tr><td>$date</td><td><a href="$e-{>url}">$e->{title}</a></td><td>$e->{address}</td><td>$wiki</td></tr>\n);
+		 #$_ ||= '' for ($date, $e->{url}, $e->{title}, $e->{address}, $wiki);
+		 my $link = $e->{url} ? qq(<a href="$e->{url}">$e->{title}</a>) : $e->{title};
+         $html .= qq(<tr><td>$date</td><td>$link</td><td>$e->{address}</td><td>$wiki</td></tr>\n);
     }
     $html .= "</table>\n";
 
