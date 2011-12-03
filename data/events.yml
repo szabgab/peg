@@ -30,6 +30,7 @@
   - date: 2010.08.21
     days: 2
     title: FrOSCon
+    url: http://www.froscon.de
     address: St Augustin, Germany
   - date: 2010.09.17
     days: 2
@@ -42,6 +43,7 @@
   - date: 2010.11.06
     days: 2
     title: T-Dose
+    url: http://www.t-dose.org/
     address: Eindhoven, The Netherlands
   - date: 2011.01.18
     days: 2
@@ -60,6 +62,7 @@
   - date: 2011.02.25
     days: 3
     title: SCALE - Annual Southern California Linux Expo
+    url: http://www.socallinuxexpo.org/
     address: Los Angeles, USA, California
   - date: 2011.03.01
     days: 5
@@ -86,7 +89,7 @@
     days: 4
     title: GUUG Fruhjahrsfachgesprach
     url: http://www.guug.de/veranstaltungen/ffg2011/
-    address: Weimar, Germany  
+    address: Weimar, Germany
   - date: 2011.03.23
     days: 3
     title: POSCON
@@ -321,6 +324,11 @@
     title: The Perl Oasis
     address: Orlando, Florida, USA
     url: http://www.perloasis.info/opw2012/
+  - date: 2012.01.20
+    days: 3
+    title: SCALE - Annual Southern California Linux Expo
+    url: http://www.socallinuxexpo.org/
+    address: Los Angeles, USA, California
   - date: 2012.03.05
     days: 3
     title: German Perl Workshop
@@ -331,6 +339,41 @@
     title: Perl Workshop in Israel
     address: Ramat Gan, Israel
     url: http://act.perl.org.il/ilpw2012/
+  - date: 2012.03.17
+    days: 2
+    title: Chemnitzer Linux-Tage
+    address: Chemnitz, Germany
+    url: http://chemnitzer.linux-tage.de/
+  - date: 2012.03.22
+    days: 1
+    title: EdTechDay
+    url: http://www.ithaca.edu/edtechday/
+    address: Ithaca, NY, USA
+  - date: 2012.03.27
+    days: 2
+    title: Internet World
+    url: http://www.internetworld-messe.de/
+    address: Munchen, Germany
+  - date: 2012.03.28
+    days: 3
+    title: POSCON
+    url: http://posscon.org/
+    address: Columbia, South Carolina, USA
+  - date: 2012.04.12
+    days: 1
+    title: Hot Ice - Internet, Cloud
+    url: http://www.usenix.org/events/hotice11/
+    address: San Jose, California, USA
+  - date: 2012.04.17
+    days: 2
+    title: Infotec
+    url: http://www.infotec.org/
+    address: Omaha, Nebraska, USA
+  - date: 2012.04.28
+    days: 1
+    title: Grazer LinuxTag
+    url: http://www.linuxtage.at/
+    address: Graz, Austria
   - date: 2012.06.13
     days: 3
     title: YAPC::NA
