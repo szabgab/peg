@@ -143,7 +143,7 @@
     title: Infotec
     url: http://www.infotec.org/
     address: Omaha, Nebraska, USA
-    comment: jhannah? - Join forces with annual OLUG http://www.olug.org/ booth? - conference 
+    comment: jhannah? - Join forces with annual OLUG http://www.olug.org/ booth? - conference
   - date: 2011.04.25
     days: 3
     title: Russian Internet Technologies
@@ -359,6 +359,12 @@
     title: POSCON
     url: http://posscon.org/
     address: Columbia, South Carolina, USA
+  - date: 2012.04.03
+    days: 2
+    title: Plat_Forms
+    address: Berlin, Germany
+    url: http://plat-forms.org
+    details: events_2012_plat_forms
   - date: 2012.04.12
     days: 1
     title: Hot Ice - Internet, Cloud
@@ -370,16 +376,42 @@
     url: http://www.infotec.org/
     address: Omaha, Nebraska, USA
   - date: 2012.04.28
+    days: 2
+    title: Linuxfest Northwest
+    url: http://linuxfestnorthwest.org/
+    address: Bellingham, Washington, USA
+  - date: 2012.04.28
     days: 1
     title: Grazer LinuxTag
     url: http://www.linuxtage.at/
     address: Graz, Austria
+  - date: 2012.05.03
+    days: 3
+    title: Wiener Linuxwochen
+    url: http://www.linuxwochen.at/
+    address: Wien, Austria
   - date: 2012.06.13
     days: 3
     title: YAPC::NA
     address: Madison, Wisconsin, USA
     url: http://yapcna.org/
-  - date: 2012.08.01
-    days: 3  
-    title: (date not fixed yet) YAPC::EU 2012
+  - date: 2012.06.30
+    days: 7
+    title: Akademy
+    address: Tallinn, Estonia
+    url: http://akademy.kde.org/
+  - date: 2012.08.20
+    days: 3
+    title: YAPC::EU 2012
     address: Frankfurt, Germany
+    url: http://act.yapc.eu/
+  - date: 2012.09.01
+    days: 3
+    title: openSUSE conference (details not fixed)
+    address: Nürnberg, Germany
+    url: http://conference.opensuse.org/
+  - date: 2012.10.01
+    days: 3
+    title: WebTech conference (details not fixed)
+    url: http://webtechcon.de/
+    address: Mainz?, Germany
