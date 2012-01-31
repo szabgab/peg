@@ -101,7 +101,7 @@ get '/events/table' => sub {
          }
          my ($year, $month, $day) = split /\./, $e->{date};
          my $dt = DateTime->new(year => $year, month => $month, day => $day);
-         my $duration = DateTime::Duration->new(days => $e->{days});
+         my $duration = DateTime::Duration->new(days => $e->{days} -1);
          my $date = $e->{date};
          if ($e->{days} > 1) {
 		$dt->add_duration($duration);
@@ -112,8 +112,8 @@ get '/events/table' => sub {
                 #$date .= '-' . join('.', $dt->year, $dt->month, $dt->day);
                 $date .= '-' . join('.', @date);
          }
-		 #$_ ||= '' for ($date, $e->{url}, $e->{title}, $e->{address}, $wiki);
-		 my $link = $e->{url} ? qq(<a href="$e->{url}">$e->{title}</a>) : $e->{title};
+	 #$_ ||= '' for ($date, $e->{url}, $e->{title}, $e->{address}, $wiki);
+	 my $link = $e->{url} ? qq(<a href="$e->{url}">$e->{title}</a>) : $e->{title};
          $html .= qq(<tr><td>$date</td><td>$link</td><td>$e->{address}</td><td>$wiki</td></tr>\n);
     }
     $html .= "</table>\n";
@@ -138,7 +138,7 @@ get '/calendar' => sub {
         }
         my ($year, $month, $day) = split /\./, $n->{date};
         my $dt = DateTime->new(year => $year, month => $month, day => $day);
-        my $duration = DateTime::Duration->new(days => $n->{days});
+        my $duration = DateTime::Duration->new(days => $n->{days} -1);
         my $vevent = Data::ICal::Entry::Event->new();
         $vevent->add_properties(
             summary => decode( 'utf-8', $n->{title} ),
