@@ -410,13 +410,33 @@
     title: openSUSE conference (details not fixed)
     address: Nürnberg, Germany
     url: http://conference.opensuse.org/
-  - date: 2012.10.01
+  - date: 2012.10.14
     days: 3
-    title: WebTech conference (details not fixed)
+    title: WebTech conference
     url: http://webtechcon.de/
-    address: Mainz?, Germany
+    address: Mainz, Germany
+  - date: 2012.10.27
+    days: 2
+    title: T-Dose
+    url: http://www.t-dose.org/
+    address: Eindhovem, The Netherlands
+  - date: 2012.11.05
+    days: 5
+    title: LinuxCon Europe 2012
+    url: http://events.linuxfoundation.org/events/linuxcon-europe
+    address: Barcelona, Spain
   - date: 2013.02.02
     days: 2
     title: FOSDEM
+    url: https://fosdem.org/2013/
     address: Brussels, Belgium
-
+  - date: 2013.02.22
+    days: 3
+    title: SCALE 11x
+    url: http://www.socallinuxexpo.org/scale11x/
+    address: Los Angeles, California. USA
+  - date: 2013.02.25
+    days: 3
+    title: ConFoo
+    url: http://confoo.ca/en/
+    address: Montreal, Canada
